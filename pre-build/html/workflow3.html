@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header3.html')
+    <!--//header-->
+    <!--library-->
+    @@include('include/library.html')
+    <!--//library-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+
+            </div>
+            <!--//app-->
+
+            <!--userMenu2-->
+            @@include('include/userMenu2.html')
+            <!--//userMenu2-->
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+<!--popup-->
+<div class="popup library">
+    <div class="nickName">
+        <span>별명을 지정하면 표출되는 영역</span>
+        <button type="button" class="btnEdit txt"><span class="hidden">수정</span></button>
+        <!--editBox-->
+        <div class="editBox input">
+            <input type="text">
+            <button type="button" class="btn black"><span>적용</span></button>
+            <button type="button" class="btn grey2"><span>취소</span></button>
+        </div>
+    </div>
+    <!--//editBox-->
+    <div class="popArea">
+        <!--head-->
+        <div class="head">
+            <strong class="titPop">포인트집계</strong>
+            <div class="btnGroup">
+                <button type="button" class="btnPopSetting"><span class="hidden">팝업 설정</span></button>
+                <button type="button" class="btnPopSizeToggle"><span class="hidden">팝업 크게/작게</span></button>
+                <button type="button" class="btnPopRemove"><span class="hidden">팝업 삭제</span></button>
+            </div>
+        </div>
+        <!--//head-->
+        <!--cont-->
+        <div class="cont cScroll">
+            <div class="inner">
+                <div class="accordion library">
+                    <dl>
+                        <dt>INPUT 파라미터</dt>
+                        <dd>파라미터 1</dd>
+                        <dd>파라미터 2</dd>
+                        <dd>파라미터 3</dd>
+                        <dd>파라미터 4</dd>
+                        <dd>파라미터 5</dd>
+                    </dl>
+                    <dl>
+                        <dt>OUTPUT 추출결과 (고유키)</dt>
+                        <dd>파라미터 1</dd>
+                        <dd>파라미터 2</dd>
+                        <dd>파라미터 3</dd>
+                        <dd>파라미터 4</dd>
+                        <dd>파라미터 5</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--//cont-->
+    </div>
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

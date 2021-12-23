@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header2.html')
+    <!--//header-->
+    <!--detailSetting-->
+    @@include('include/detailSetting.html')
+    <!--//detailSetting-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+                <!--sampleFrame-->
+                <div class="sampleFrame">
+                    <!--toolArea
+                    <div class="toolArea">
+                        <div class="flex ac">
+                            <button type="button" class="btn tool prev"><span class="hidden">이전</span></button>
+                            <button type="button" class="btn tool next"><span class="hidden">다음</span></button>
+                            <button type="button" class="btn tool refresh"><span class="hidden">새로고침</span></button>
+                            <input type="text" class="address" />
+                            <button type="button" class="btn tool more"><span class="hidden">더보기</span></button>
+                        </div>
+                    </div>
+                    //toolArea-->
+                    <!--head-->
+                    <div class="head">
+                        <div class="logo">
+                            <img src="../images/webapp/img-logo.png" alt="logo"/>
+                        </div>
+                        <strong class="mainTit">웹앱 타이틀</strong>
+                        <b class="subTit">- 웹앱 서브타이틀</b>
+                    </div>
+                    <!--//head-->
+                    <!--contextArea-->
+                    <div class="contextArea theme01">
+                        <!--contextNav-->
+                        <div class="contextNav">
+                            <!--contextList-->
+                            <ul class="contextList">
+                                <li class="active">탭1 명칭</li>
+                                <li>탭2 명칭</li>
+                                <li>탭3 명칭</li>
+                                <li>탭4 명칭</li>
+                                <li>탭5 명칭</li>
+                                <li>탭6 명칭</li>
+                                <li>탭7 명칭</li>
+                                <li>탭8 명칭</li>
+                            </ul>
+                            <!--//contextList-->
+                        </div>
+                        <!--//contextNav-->
+                    </div>
+                    <!--//contextArea-->
+                    <!--cont-->
+                    <div class="cont">
+                        <!--tocArea-->
+                        <div class="tocArea">
+                            @@include('include/toc.html')
+                        </div>
+                        <!--//tocArea-->
+                        <!--contentArea-->
+                        <div class="contentArea">
+                            @@include('include/widget.html')
+                        </div>
+                        <!--//contentArea-->
+                    </div>
+                    <!--//cont-->
+
+                    <!--foot-->
+                    <div class="foot">
+                        <p>COPYRIGHT(C) LX, ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <!--//foot-->
+                </div>
+                <!--//sampleFrame-->
+            </div>
+            <!--//app-->
+
+            <!--userMenu2-->
+            @@include('include/userMenu2.html')
+            <!--//userMenu2-->
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header.html')
+    <!--//header-->
+    <!--TOC-->
+    @@include('include/toc.html')
+    <!--//TOC-->
+    <!--analysis-->
+    @@include('include/analysis.html')
+    <!--//analysis-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--map-->
+            <div id="map" style="background:#ccc;"></div>
+            <!--//map-->
+
+            <!--userMenu-->
+            @@include('include/userMenu.html')
+            <!--//userMenu-->
+
+            <!--widget-->
+            @@include('include/widget.html')
+            <!--//widget-->
+
+            <!--location-->
+            @@include('include/location.html')
+            <!--//location-->
+
+            <!--scaleWidget-->
+            @@include('include/scaleWidget.html')
+            <!--//scaleWidget-->
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+<!--popup-->
+<div class="popup" style="width:900px;">
+    <!--head-->
+    <div class="head blue">
+        <strong class="titPop">새 웹맵</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont">
+        <div class="inner cScroll" style="max-height:650px;">
+            <!--table-->
+            <div class="table">
+                <table>
+                    <caption>상세정보</caption>
+                    <colgroup>
+                        <col style="width:200px;"/>
+                        <col style="width:auto;"/>
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td><input type="text" style="width:100%;"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">설명</th>
+                        <td><textarea style="width:100%;height:66px;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">썸네일</th>
+                        <td>
+                            <div class="innerMap">
+                                <div class="imgArea">
+                                    <div class="noImg">
+                                        <p>등록된 미리보기가 없습니다.</p>
+                                    </div>
+                                    <button type="button" class="btnEdit img"><span class="hidden">수정</span></button>
+                                    <div class="editBox img">
+                                        <button type="button" class="btn black"><span>업로드</span></button>
+                                        <button type="button" class="btn grey2"><span>현재화면</span></button>
+                                        <button type="button" class="btn grey2"><span>삭제</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+            <div class="btnArea flexRight" style="margin-top:20px;">
+                <button type="button" class="btn blue2 lg"><span>저장</span></button>
+            </div>
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header2.html')
+    <!--//header-->
+    <!--detailSetting-->
+    @@include('include/detailSetting.html')
+    <!--//detailSetting-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+                <div class="inner">
+                    <!--searchArea-->
+                    <div class="searchArea">
+                        <div class="txtArea">
+                            <strong class="tit">템플릿 구성 선택</strong>
+                            <span class="desc">발행할 앱의 템플릿을 선택합니다.</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" style="width:370px;">
+                            <button type="button" class="btn black"><span class="hidden">검색</span></button>
+                        </div>
+                    </div>
+                    <!--//searchArea-->
+                </div>
+                <!--tempList-->
+                <div class="tempList">
+                    <div class="inner">
+                        <div class="temp">
+                            <div class="inner">
+                                <img src="../images/webapp/img-type-01.png"/>
+                                <div class="txtBox">
+                                    <strong class="tit">표준 템플릿</strong>
+                                    <p class="desc">지도 조회 서비스를 위한 템플릿으로, 웹맵의 화면구성 중 설정 기능만 제외한 구성입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="temp">
+                            <div class="inner">
+                                <img src="../images/webapp/img-type-02.png"/>
+                                <div class="txtBox">
+                                    <strong class="tit">간편보기 템플릿</strong>
+                                    <p class="desc">다른 프로그램에 삽입되는 지도 조회 서비스를 위한 템플릿으로, TOC없이 최소한의 위젯을 사용한 구성입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="temp">
+                            <div class="inner">
+                            <img src="../images/webapp/img-type-03.png"/>
+                                <div class="txtBox">
+                                    <strong class="tit">편집 템플릿</strong>
+                                    <p class="desc">레이어 편집 서비스를 위한 템플릿으로, 피처의 위상 및 속성을 관리 할 수 있는 위젯과 TOC를 포함한 구성입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="temp">
+                            <div class="inner">
+                                <img src="../images/webapp/img-type-04.png"/>
+                                <div class="txtBox">
+                                    <strong class="tit">시리즈 맵 템플릿</strong>
+                                    <p class="desc">통합 서비스를 위한 템플릿으로, 여러 페이지의 콘텐츠를 탭 메뉴로 이동할 수 있는 구성입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="temp">
+                            <div class="inner">
+                                <img src="../images/webapp/img-type-05.png"/>
+                                <div class="txtBox">
+                                    <strong class="tit">시리즈 맵 템플릿</strong>
+                                    <p class="desc">통합 서비스를 위한 템플릿으로, 여러개의 콘텐츠를 스크롤로 이동할 수 있는 한페이지 구성입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnArea flexRight" style="flex:1;align-items:flex-end;">
+                            <button type="button" class="btn blue2 lg"><span>웹앱 생성</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!--//tempList-->
+            </div>
+            <!--//app-->
+
+            <!--userMenu2-->
+            @@include('include/userMenu2.html')
+            <!--//userMenu2-->
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+</body>
+</html>

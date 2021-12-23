@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header2.html')
+    <!--//header-->
+    <!--detailSetting-->
+    @@include('include/detailSetting.html')
+    <!--//detailSetting-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+                <!--sampleFrame-->
+                <div class="sampleFrame themeType01 style04">
+                    <!--toolArea
+                    <div class="toolArea">
+                        <div class="flex ac">
+                            <button type="button" class="btn tool prev"><span class="hidden">이전</span></button>
+                            <button type="button" class="btn tool next"><span class="hidden">다음</span></button>
+                            <button type="button" class="btn tool refresh"><span class="hidden">새로고침</span></button>
+                            <input type="text" class="address" />
+                            <button type="button" class="btn tool more"><span class="hidden">더보기</span></button>
+                        </div>
+                    </div>
+                    //toolArea-->
+                    <!--head-->
+                    <div class="head">
+                        <div class="logo">
+                            <img src="../images/webapp/img-logo2.png" alt="logo"/>
+                        </div>
+                        <strong class="mainTit">웹앱 타이틀</strong>
+                        <b class="subTit">- 웹앱 서브타이틀</b>
+                        <div class="flex">
+                            <button type="button" class="btnTip white"><span class="hidden">팁</span><span>!</span></button>
+                            <div class="tipDesc">
+                                <p>편집한 웹앱의 정보를 표시합니다.</p>
+                            </div>
+                        </div>
+                        <div class="toolGroup">
+                            <ul>
+                                <li>
+                                    <button type="button" class="tool">
+                                        <img src="../images/widget/ico-tool-add.png"/>
+                                        <img src="../images/widget/ico-tool-add-hover.png"/>
+                                        <span>추가</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="tool">
+                                        <img src="../images/widget/ico-tool-add.png"/>
+                                        <img src="../images/widget/ico-tool-add-hover.png"/>
+                                        <span>추가</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="tool">
+                                        <img src="../images/widget/ico-tool-add.png"/>
+                                        <img src="../images/widget/ico-tool-add-hover.png"/>
+                                        <span>추가</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="tool">
+                                        <img src="../images/widget/ico-tool-add.png"/>
+                                        <img src="../images/widget/ico-tool-add-hover.png"/>
+                                        <span>추가</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="tool">
+                                        <img src="../images/widget/ico-tool-add.png"/>
+                                        <img src="../images/widget/ico-tool-add-hover.png"/>
+                                        <span>추가</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//head-->
+                    <!--cont-->
+                    <div class="cont">
+                        <!--tocArea-->
+                        <div class="tocArea">
+                            @@include('include/toc.html')
+                        </div>
+                        <!--//tocArea-->
+                        <!--contentArea-->
+                        <div class="contentArea">
+                            <!--map-->
+                            <div id="map"></div>
+                            <!--//map-->
+                            <!--optionTable-->
+                            <div id="optionTable" class="gridWidget active">
+                                <!--head-->
+                                <div class="head">
+                                    <strong class="titOpTable">속성 테이블</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btn scale up"><span class="hidden">확대</span></button>
+                                        <button type="button" class="btn scale down"><span class="hidden">축소</span></button>
+                                        <button type="button" class="btnOpTableHide"><span class="hidden">숨기기</span></button>
+                                        <button type="button" class="btnOpTableClose"><span class="hidden">닫기</span></button>
+                                    </div>
+                                </div>
+                                <!--//head-->
+                                <!--cont-->
+                                <div class="cont">
+                                    <div class="inner flex ac">
+                                        <div class="btnArea">
+                                            <button type="button" class="btn black"><span>결과 다운로드</span><i class="ico rt ico-op-down"></i></button>
+                                            <button type="button" class="btn black"><span>레이어 발행</span><i class="ico rt ico-op-layer"></i></button>
+                                            <button type="button" class="btn grey2"><span>취소</span><i class="ico rt ico-op-cancel"></i></button>
+                                        </div>
+                                        <div class="btnArea">
+                                            <button type="button" class="btn black btnIconBox setting"><span class="tip">속성설정</span></button>
+                                            <button type="button" class="btn black btnIconBox chart"><span class="tip">차트</span></button>
+                                            <button type="button" class="btn black btnIconBox filterAdd"><span class="tip">필터추가</span></button>
+                                            <div class="pos-r">
+                                                <button type="button" class="btn black btnIconBox down"><span class="tip">데이터추출</span></button>
+                                                <div class="inList">
+                                                    <ul>
+                                                        <li>
+                                                            <button type="button" class="tag green"><span>SHP</span></button>
+                                                        </li>
+                                                        <li>
+                                                            <button type="button" class="tag blue"><span>CSV</span></button>
+                                                        </li>
+                                                        <li>
+                                                            <button type="button" class="tag peacock"><span>GeoJson</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn black btnIconBox save"><span class="tip">저장</span></button>
+                                        </div>
+                                        <div class="searchCont">
+                                            <!--
+                                            <div class="group">
+                                                <select style="width:210px;">
+                                                    <option value="선택한 행 숨김" selected>선택한 행 숨김</option>
+                                                </select>
+                                                <button type="button" class="btn grey2"><span>확인</span></button>
+                                            </div>
+                                            -->
+                                            <div class="group">
+                                                <select style="width:120px;">
+                                                    <option value="공간검색" selected="">공간검색</option>
+                                                </select>
+                                                <button type="button" class="btn grey2 btnIconBox search"><span class="tip">조회</span></button>
+                                                <button type="button" class="btn grey2 btnIconBox edit"><span class="tip">편집</span></button>
+                                                <button type="button" class="btn grey2 btnIconBox submit"><span class="tip">확인</span></button>
+                                                <button type="button" class="btn grey2 btnIconBox save2"><span class="tip">저장</span></button>
+                                                <button type="button" class="btn grey2 btnIconBox add"><span class="tip">추가</span></button>
+                                                <button type="button" class="btn grey2 btnIconBox remove"><span class="tip">삭제</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="btnArea flex ac">
+                                            <div class="checkbox" style="margin-right:10px;">
+                                                <input type="checkbox" id="chkEdit">
+                                                <label for="chkEdit">편집모드</label>
+                                            </div>
+                                            <button type="button" class="btn white btnIconBox save2"><span class="tip">저장</span></button>
+                                            <button type="button" class="btn white btnIconBox filterReset"><span class="tip">필터초기화</span></button>
+                                            <button type="button" class="btn white btnIconBox selectReset"><span class="tip lt">선택초기화</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="inner white">
+                                        <!--sheetArea-->
+                                        <div class="sheetArea"></div>
+                                        <!--//sheetArea-->
+                                    </div>
+                                </div>
+                                <!--//cont-->
+                            </div>
+                            <!--//optionTable-->
+                            <div class="toolGroup">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="tool">
+                                            <img src="../images/widget/ico-tool-add.png"/>
+                                            <img src="../images/widget/ico-tool-add-hover.png"/>
+                                            <span>추가</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="tool">
+                                            <img src="../images/widget/ico-tool-add.png"/>
+                                            <img src="../images/widget/ico-tool-add-hover.png"/>
+                                            <span>추가</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="tool">
+                                            <img src="../images/widget/ico-tool-add.png"/>
+                                            <img src="../images/widget/ico-tool-add-hover.png"/>
+                                            <span>추가</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="tool">
+                                            <img src="../images/widget/ico-tool-add.png"/>
+                                            <img src="../images/widget/ico-tool-add-hover.png"/>
+                                            <span>추가</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="tool">
+                                            <img src="../images/widget/ico-tool-add.png"/>
+                                            <img src="../images/widget/ico-tool-add-hover.png"/>
+                                            <span>추가</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            @@include('include/widget.html')
+                            <div class="widgetFlex">
+                                @@include('include/location.html')
+                                @@include('include/userMenu.html')
+                            </div>
+
+                            <div class="editArea">
+                                <div class="head">
+                                    <strong class="tit">편집기</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnEditHide"><span class="hidden">숨기기</span></button>
+                                        <button type="button" class="btnEditClose"><span class="hidden">편집기 닫기</span></button>
+                                    </div>
+                                </div>
+                                <div class="cont">
+                                    <div class="inner">
+                                        <div class="editor" style="height:300px;background:#fff;">편집기 영역</div>
+                                        <div class="editor" style="height:300px;background:#fff;">차트 편집기 영역</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//contentArea-->
+                    </div>
+                    <!--//cont-->
+
+                    <!--foot-->
+                    <div class="foot">
+                        <p>COPYRIGHT(C) LX, ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <!--//foot-->
+                </div>
+                <!--//sampleFrame-->
+            </div>
+            <!--//app-->
+
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+
+<script>
+    $('.btnSample').on({
+        "click":function (){
+            var idx = $(this).index()+1;
+            $('.sampleFrame').removeClass('style01').removeClass('style02');
+            $('.sampleFrame').addClass('style0'+idx)
+        }
+    })
+</script>
+</body>
+</html>

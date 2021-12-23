@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header.html')
+    <!--//header-->
+    <!--TOC-->
+    @@include('include/toc.html')
+    <!--//TOC-->
+    <!--analysis-->
+    @@include('include/analysis.html')
+    <!--//analysis-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--map-->
+            <div id="map" style="background:#ccc;"></div>
+            <!--//map-->
+
+            <!--userMenu-->
+            @@include('include/userMenu.html')
+            <!--//userMenu-->
+
+            <!--widget-->
+            @@include('include/widget.html')
+            <!--//widget-->
+
+            <!--location-->
+            @@include('include/location.html')
+            <!--//location-->
+
+            <!--scaleWidget-->
+            @@include('include/scaleWidget.html')
+            <!--//scaleWidget-->
+
+            <!--thisAddr-->
+            <div class="thisAddr">
+                <div class="inner">
+                    <!--addrItem-->
+                    <div class="addrItem">
+                        <div class="roadAddr">
+                            <div class="addrTag">
+                                <span class="roadTag">도로명</span>
+                            </div>
+                            <span class="addrDesc">서울 종로구 종로 293(창신동)</span>
+                        </div>
+                        <div class="jibunAddr">
+                            <div class="addrTag">
+                                <span class="jibunTag">지번</span>
+                            </div>
+                            <span class="addrDesc">서울 종로구 창신동 562번지</span>
+                        </div>
+                    </div>
+                    <!--//addrItem-->
+                </div>
+            </div>
+            <!--//thisAddr-->
+
+            <!--thisInput-->
+            <div class="thisInput">
+                <input type="text" />
+                <button type="button"><span>입력</span></button>
+            </div>
+            <!--//thisInput-->
+            <!--bookmarkArea-->
+            <div class="bookmarkArea">
+                <div class="inner">
+                    <div class="row">
+                        <div class="flex">
+                            <input type="text" placeholder="북마크 이름" />
+                            <button type="button" class="btn blue2"><span>현재위치 저장</span></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="text" value="서울시청" disabled />
+                        <button type="button" class="btnPin"><span class="hidden">북마크</span></button>
+                    </div>
+                    <div class="row">
+                        <input type="text" value="부산시청" disabled />
+                        <button type="button" class="btnPin"><span class="hidden">북마크</span></button>
+                    </div>
+                    <div class="row">
+                        <input type="text" value="인천시청" disabled />
+                        <button type="button" class="btnPin"><span class="hidden">북마크</span></button>
+                    </div>
+                </div>
+            </div>
+            <!--//bookmarkArea-->
+            <!--timeSlider-->
+            <div class="timeSlider">
+                <div class="inner">
+                    <div class="timeBox">
+                        <div class="inner">
+                            <div class="playerArea">
+                                <input type="range" class="playerSlider" />
+                                <div class="btnGroup">
+                                    <button type="button" class="btn btnTimePlay"><span class="hidden">play</span></button>
+                                    <button type="button" class="btn btnTimePause"><span class="hidden">play</span></button>
+                                    <button type="button" class="btn btnTimeStop"><span class="hidden">stop</span></button>
+                                </div>
+                            </div>
+                            <!--choiceList-->
+                            <div class="choiceList">
+                                <div class="choice">
+                                    <label>레이어 설정</label>
+                                    <select>
+                                        <option value="폭염 취약지 레이어" selected>폭염 취약지 레이어</option>
+                                    </select>
+                                </div>
+                                <div class="choice">
+                                    <label>컬럼 설정</label>
+                                    <select>
+                                        <option value="일시" selected>일시</option>
+                                    </select>
+                                </div>
+                                <div class="choice">
+                                    <label>시작 범위</label>
+                                    <input type="text" />
+                                </div>
+                                <div class="choice">
+                                    <label>종료 범위</label>
+                                    <input type="text" />
+                                </div>
+                                <div class="choice">
+                                    <label>시간 간격</label>
+                                    <select>
+                                        <option value="1초" selected>1초</option>
+                                    </select>
+                                </div>
+                                <div class="choice">
+                                    <label>누적 여부</label>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk-play"/>
+                                        <label for="chk-play"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//choiceList-->
+                        </div>
+                    </div>
+                    <div class="btnArea flexRight" style="margin-top:10px;">
+                        <button type="button" class="btn orange lg"><span>적용</span></button>
+                    </div>
+                </div>
+            </div>
+            <!--//timeSlider-->
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+</body>
+</html>

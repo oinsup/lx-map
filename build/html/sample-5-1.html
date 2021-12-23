@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/jquery-ui.css">
+    <link rel="stylesheet" href="../lib/colorpicker/colorpicker.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/common/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/common/favicon.png">
+    <link rel="stylesheet" href="/lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../css/header_work.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="../lib/colorpicker/colorpicker.js"></script>
+    <script type="text/javascript" src="../lib/sortable.js"></script>
+    <script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+    <script src="../js/ui.js"></script>
+
+</head>
+<body>
+<!--wrap-->
+<div id="wrap">
+    <div class="btnGroup" style="position:absolute;left:50%;top:50%;color:#000;z-index:100000;font-size:20px;background:#fff;height:40px;">
+        <button type="button" class="btnSample">샘플1</button>
+        <button type="button" class="btnSample">샘플2</button>
+    </div>
+
+    <div class="btnGroup" style="position:absolute;left:50%;top:60%;color:#000;z-index:100000;font-size:20px;background:#fff;height:40px;">
+        <button type="button" class="btnPanel p20">패널사이즈 20</button>
+        <button type="button" class="btnPanel p30">패널사이즈 30</button>
+        <button type="button" class="btnPanel p40">패널사이즈 40</button>
+        <button type="button" class="btnPanel p50">패널사이즈 50</button>
+    </div>
+    <!--header-->
+    <header id="header">
+    <!--upper-->
+    <div class="group upper">
+        <a href="#" title="LX">
+            <h1 class="logo">
+                <img src="../images/header/logo-type02.png" alt="로고"/>
+            </h1>
+        </a>
+        <div class="menu">
+            <ul class="dep1">
+                <li class="webApp">
+                    <button type="button" class="tool">
+                        <span>웹앱</span>
+                    </button>
+                    <ul class="dep2">
+                        <li>
+                            <button type="button" class="tool type01">
+                                <span>새&nbsp;웹맵</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="tool type02">
+                                <span>검색</span>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="detail">
+                    <button type="button" class="tool">
+                        <span>상세설정</span>
+                    </button>
+                </li>
+                <li class="preview">
+                    <button type="button" class="tool">
+                        <span>미리보기</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--//upper-->
+    <div class="user">
+        <button type="button" class="btnUser">
+            <span>사용자</span>
+            <span class="new">22</span>
+        </button>
+        <!--userPop-->
+        <div class="userPop">
+            <div class="inner">
+                <strong class="position">최고관리자</strong>
+                <b class="name">송은희<span>님</span></b>
+                <ul>
+                    <li>
+                        <a href="#" title="알림"><i class="ico alarm"></i>
+                            <span class="new">22</span>
+                            <span>알림</span></a>
+                    </li>
+                    <li>
+                        <a href="#" title="mypage"><i class="ico myPage"></i><span>마이페이지</span></a>
+                    </li>
+                    <li>
+                        <a href="#" title="logout"><i class="ico logout"></i><span>로그아웃</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--//userPop-->
+    </div>
+    <!--lower-->
+    <div class="group lower">
+        <div class="menu">
+            <ul class="dep1">
+                <li class="share">
+                    <button type="button" class="tool">
+                        <span>공유</span>
+                    </button>
+                </li>
+                <li class="save">
+                    <button type="button" class="tool">
+                        <span>저장</span>
+                    </button>
+                    <ul class="dep2">
+                        <li>
+                            <button type="button" class="tool type01">
+                                <span>저장</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="tool type02">
+                                <span>다른이름<br/>으로저장</span>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="info">
+                    <button type="button" class="tool">
+                        <span>기본정보</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--//lower-->
+</header>
+    <!--//header-->
+    <!--detailSetting-->
+    
+<div id="detailSetting">
+    <!-- toc 1뎁스-->
+    <div class="toc dep1 tocWidget">
+        <div class="inner">
+            <!--head-->
+            <div class="head">
+                <strong class="titToc">독도 홍보 사이트</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnTocHide"><span class="hidden">숨기기</span></button>
+                </div>
+            </div>
+            <!--//head-->
+            <!--cont-->
+            <div class="cont cScroll">
+                <div class="inner">
+                    <!--tabContWrap-->
+                    <div class="tabContWrap type05">
+                        <!--tabNav-->
+                        <div class="tabNav">
+                            <!--tabList-->
+                            <ul class="tabList">
+                                <li class="active">레이아웃</li>
+                                <li>테마</li>
+                                <li>위젯</li>
+                            </ul>
+                            <!--//tabList-->
+                        </div>
+                        <!--//tabNav-->
+                        <!--tabCont-->
+                        <div class="tabCont active">
+                            <div class="sectionArea thin">
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">표준</strong>
+                                    <!--layoutArea-->
+                                    <div class="layoutArea col2">
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-01-01.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-01-02.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-01-03.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-01-04.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                    </div>
+                                    <!--//layoutArea-->
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">간편보기</strong>
+                                    <!--layoutArea-->
+                                    <div class="layoutArea col2">
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-02-01.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-02-02.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-02-03.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-02-04.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                    </div>
+                                    <!--//layoutArea-->
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">편집</strong>
+                                    <!--layoutArea-->
+                                    <div class="layoutArea col2">
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-03-01.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-03-02.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-03-03.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-03-04.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                    </div>
+                                    <!--//layoutArea-->
+                                </div>
+                                <!--//tabSec-->
+                            </div>
+                            <div class="btnArea flexRight" style="margin-top:10px;">
+                                <button type="button" class="btn blue lg"><span>저장</span></button>
+                            </div>
+                        </div>
+                        <!--//tabCont-->
+                        <!--tabCont-->
+                        <div class="tabCont">
+                            <div class="sectionArea thin">
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">헤더 정보</strong>
+                                    <div class="tabTable">
+                                        <table>
+                                            <caption>헤더 정보</caption>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><label>타이틀 로고</label></th>
+                                                <td>
+                                                    <div class="fileSelect">
+                                                        <input class="fileLocal" value="" disabled="disabled">
+                                                        <label for="file03" class="btnFileSelect">찾아보기</label>
+                                                        <input type="file" id="file03" class="fileHidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>타이틀 링크</label></th>
+                                                <td>
+                                                    <input type="text" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>타이틀</label></th>
+                                                <td>
+                                                    <input type="text" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>서브 타이틀</label></th>
+                                                <td>
+                                                    <input type="text" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="va-t"><label>정보</label></th>
+                                                <td style="padding:5px 0;">
+                                                    <textarea style="width:216px;height:55px;"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>배경색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>폰트색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">섹션 설정</strong>
+                                    <div class="tabTable">
+                                        <table>
+                                            <caption>섹션 설정</caption>
+                                            <colgroup>
+                                                <col style="width:90px;"/>
+                                                <col style="width:auto;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><label>테마선택</label></th>
+                                                <td>
+                                                    <button type="button" class="btnPopOpen"><span class="hidden">팝업열기</span></button>
+                                                    <span>테마 1</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>배경색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>포인트색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">푸터 설정</strong>
+                                    <div class="tabTable">
+                                        <table>
+                                            <caption>푸터 설정</caption>
+                                            <colgroup>
+                                                <col style="width:90px;"/>
+                                                <col style="width:auto;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><label>타이틀 로고</label></th>
+                                                <td>
+                                                    <div class="fileSelect">
+                                                        <input class="fileLocal" value="" disabled="disabled">
+                                                        <label for="file02" class="btnFileSelect">찾아보기</label>
+                                                        <input type="file" id="file02" class="fileHidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="va-t"><label>내용</label></th>
+                                                <td style="padding:5px 0;">
+                                                    <textarea style="width:216px;height:55px;"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>배경색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>폰트색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--//tabSec-->
+                            </div>
+                            <div class="btnArea flexRight" style="margin-top:10px;">
+                                <button type="button" class="btn blue lg"><span>저장</span></button>
+                            </div>
+                        </div>
+                        <!--//tabCont-->
+                        <!--tabCont-->
+                        <div class="tabCont">
+                            <div class="sectionArea thin">
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">TOC</strong>
+                                    <!--widgetList-->
+                                    <div class="widgetList">
+                                        <div class="inner">
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget layerSearch">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-layersearch.png" alt="레이어 검색"/>
+                                                    </span>
+                                                    <span class="txt"><span>레이어<br/>검색</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget style">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-style.png" alt="스타일"/>
+                                                    </span>
+                                                    <span class="txt"><span>스타일</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget editor">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-editor.png" alt="조건식 편집기"/>
+                                                    </span>
+                                                    <span class="txt"><span>조건식<br/>편집기</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget form">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-form.png" alt="피쳐속성 폼"/>
+                                                    </span>
+                                                    <span class="txt"><span>피쳐속성<br/>폼</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget legend">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-legend.png" alt="범례"/>
+                                                    </span>
+                                                    <span class="txt"><span>범례</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btnWidgetAdd"><span class="hidden">위젯추가</span></button>
+                                        </div>
+                                    </div>
+                                    <!--//widgetList-->
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">상단 위젯</strong>
+                                    <!--widgetList-->
+                                    <div class="widgetList">
+                                        <div class="inner">
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget compass">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-compass.png" alt="나침반"/>
+                                                    </span>
+                                                    <span class="txt"><span>나침반</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget boundary">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-boundary.png" alt="행정경계 표시"/>
+                                                    </span>
+                                                    <span class="txt"><span>행정경계<br/>표시</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget search">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-search.png" alt="검색"/>
+                                                    </span>
+                                                    <span class="txt"><span>검색</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btnWidgetAdd"><span class="hidden">위젯 추가</span></button>
+                                        </div>
+                                    </div>
+                                    <!--//widgetList-->
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">툴바 위젯</strong>
+                                    <!--widgetList-->
+                                    <div class="widgetList">
+                                        <div class="inner">
+                                            <div class="widgetBox fixed">
+                                                <button type="button" class="widget home">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-home.png" alt="홈"/>
+                                                    </span>
+                                                    <span class="txt"><span>홈</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetView"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox fixed">
+                                                <button type="button" class="widget current">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-current.png" alt="현재위치"/>
+                                                    </span>
+                                                    <span class="txt"><span>현재위치</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetView"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox fixed">
+                                                <button type="button" class="widget prev">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-prev.png" alt="이동이전"/>
+                                                    </span>
+                                                    <span class="txt"><span>이동이전</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetView"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget bgMap">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-bgmap.png" alt="배경지도"/>
+                                                    </span>
+                                                    <span class="txt"><span>배경지도</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget divMap">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-divmap.png" alt="분할지도"/>
+                                                    </span>
+                                                    <span class="txt"><span>분할지도</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget draw">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-draw.png" alt="그리기"/>
+                                                    </span>
+                                                    <span class="txt"><span>그리기</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget measure">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-measure.png" alt="측정"/>
+                                                    </span>
+                                                    <span class="txt"><span>측정</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btnWidgetAdd"><span class="hidden">위젯 추가</span></button>
+                                        </div>
+                                    </div>
+                                    <!--//widgetList-->
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">하단 위젯</strong>
+                                    <!--widgetList-->
+                                    <div class="widgetList">
+                                        <div class="inner">
+                                            <div class="widgetBox fixed">
+                                                <button type="button" class="widget zoom">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-zoom.png"/>
+                                                    </span>
+                                                    <span class="txt"><span>확대축소</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetView"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget slider">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-slider.png"/>
+                                                    </span>
+                                                    <span class="txt"><span>축적범위<br/>슬리아더</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget accBar">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-accbar.png"/>
+                                                    </span>
+                                                    <span class="txt"><span>축적바</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget accInput">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-accinput.png"/>
+                                                    </span>
+                                                    <span class="txt"><span>축적입력</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btnWidgetAdd"><span class="hidden">위젯 추가</span></button>
+                                        </div>
+                                    </div>
+                                    <!--//widgetList-->
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">헤더 위젯</strong>
+                                    <!--widgetList-->
+                                    <div class="widgetList">
+                                        <div class="inner">
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget save">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-save.png"/>
+                                                    </span>
+                                                    <span class="txt"><span>저장</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="widgetBox">
+                                                <button type="button" class="widget print">
+                                                    <span class="imgBox">
+                                                        <img src="../images/widget/ico-widget-print.png"/>
+                                                    </span>
+                                                    <span class="txt"><span>인쇄</span></span>
+                                                </button>
+                                                <div class="flex">
+                                                    <button type="button" class="btnWidgetRemove"><span class="hidden">위젯삭제</span></button>
+                                                    <button type="button" class="btnWidgetEdit"><span class="hidden">위젯편집</span></button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btnWidgetAdd"><span class="hidden">위젯 추가</span></button>
+                                        </div>
+                                    </div>
+                                    <!--//widgetList-->
+                                </div>
+                                <!--//tabSec-->
+                            </div>
+                            <div class="btnArea flexRight" style="margin-top:10px;">
+                                <button type="button" class="btn blue lg"><span>저장</span></button>
+                            </div>
+                        </div>
+                        <!--//tabCont-->
+                    </div>
+                    <!--//tabContWrap-->
+                </div>
+            </div>
+            <!--//cont-->
+        </div>
+    </div>
+    <!--// toc 1뎁스-->
+</div>
+    <!--//detailSetting-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+                <!--sampleFrame-->
+                <div class="sampleFrame themeType05 style01">
+                    <!--toolArea
+                    <div class="toolArea">
+                        <div class="flex ac">
+                            <button type="button" class="btn tool prev"><span class="hidden">이전</span></button>
+                            <button type="button" class="btn tool next"><span class="hidden">다음</span></button>
+                            <button type="button" class="btn tool refresh"><span class="hidden">새로고침</span></button>
+                            <input type="text" class="address" />
+                            <button type="button" class="btn tool more"><span class="hidden">더보기</span></button>
+                        </div>
+                    </div>
+                    //toolArea-->
+                    <!--head-->
+                    <div class="head">
+                        <div class="logo">
+                            <img src="../images/webapp/img-logo2.png" alt="logo"/>
+                        </div>
+                        <strong class="mainTit">웹앱 타이틀</strong>
+                        <b class="subTit">- 웹앱 서브타이틀</b>
+                        <div class="flex">
+                            <button type="button" class="btnTip white"><span class="hidden">팁</span><span>!</span></button>
+                            <div class="tipDesc">
+                                <p>편집한 웹앱의 정보를 표시합니다.</p>
+                            </div>
+                        </div>
+                        <div class="toolGroup">
+                            <ul>
+                                <li class="printWidget">
+                                    <button type="button" class="tool"><span>출력</span></button>
+                                </li>
+                                <li class="resetWidget">
+                                    <button type="button" class="tool"><span>초기화</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//head-->
+                    <!--cont-->
+                    <div class="cont">
+                        <!--sectionArea-->
+                        <div class="sectionArea type01">
+                            <ul>
+                                <li class="active">
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                                <li>
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                                <li>
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                                <li>
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                                <li>
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--sectionArea-->
+                        <!--tocArea-->
+                        <div class="tocArea per typeArticle">
+                            <div class="articleArea">
+                                <div class="articleList cScroll">
+                                    <div class="context section current">
+                                        <p class="title">2월23일 확진자 현황</p>
+                                        <div class="desc">질병관리본부 중앙방역대책본부는 6월 23일 0시 현재, 지역사회 6명,
+                                            16명, 해외유입 30명(총46명)의 신규확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.
+                                        </div>
+                                        <button type="button" class="btnModify"><span class="hidden">수정</span></button>
+                                    </div>
+                                    <div class="context section">
+                                        <p class="title">2월23일 확진자 현황</p>
+                                        <div class="desc">질병관리본부 중앙방역대책본부는 6월 23일 0시 현재, 지역사회 6명,
+                                            16명, 해외유입 30명(총46명)의 신규확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.
+                                        </div>
+                                        <button type="button" class="btnModify"><span class="hidden">수정</span></button>
+                                    </div>
+                                    <div class="context section">
+                                        <p class="title">2월23일 확진자 현황</p>
+                                        <div class="desc">질병관리본부 중앙방역대책본부는 6월 23일 0시 현재, 지역사회 6명,
+                                            16명, 해외유입 30명(총46명)의 신규확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.
+                                        </div>
+                                        <button type="button" class="btnModify"><span class="hidden">수정</span></button>
+                                    </div>
+                                    <div class="context section">
+                                        <p class="title">2월23일 확진자 현황</p>
+                                        <div class="desc">질병관리본부 중앙방역대책본부는 6월 23일 0시 현재, 지역사회 6명,
+                                            16명, 해외유입 30명(총46명)의 신규확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.
+                                        </div>
+                                        <button type="button" class="btnModify"><span class="hidden">수정</span></button>
+                                    </div>
+                                    <div class="context section">
+                                        <p class="title">2월23일 확진자 현황</p>
+                                        <div class="desc">질병관리본부 중앙방역대책본부는 6월 23일 0시 현재, 지역사회 6명,
+                                            16명, 해외유입 30명(총46명)의 신규확진자가 발생하여 총 누적 확진자
+                                            확진자수 12,484명(해외유입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다.입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누밝혔다.
+                                            신규 격리해제자는 27명으로 총 10,980명(87.4%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다.입 1,741명)이라고 밝혔다.
+                                            신규 격리해제자는 27명으로 총 104%)이 격리해제되어,
+                                            현재 1,295명이 격리중이다. 사망자는 1명으로 누적사망자는
+                                            281명(치명률 2.25%)이다.
+                                        </div>
+                                        <button type="button" class="btnModify"><span class="hidden">수정</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//tocArea-->
+                        <!--contentArea-->
+                        <div class="contentArea">
+                            <div id="widget">
+    <div class="flex">
+        <div class="group active">
+            <ul class="dep1">
+                <li class="basemapWidget">
+                    <button type="button" class="tool"><span>배경지도</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>기본지도</span></button>
+                        <button type="button" class="tool type02"><span>영상지도</span></button>
+                        <button type="button" class="tool type03"><span>영어지도</span></button>
+                    </div>
+                </li>
+                <li class="divideWidget">
+                    <button type="button" class="tool"><span>분할지도</span></button>
+                    <div class="dep2">
+                        <div class="divide2">
+                            <button type="button" class="tool type01"><span>2분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                            </div>
+                        </div>
+                        <div class="divide3">
+                            <button type="button" class="tool type02"><span>3분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                                <button type="button" class="tool type03"><span>복합형01</span></button>
+                                <button type="button" class="tool type04"><span>복합형02</span></button>
+                                <button type="button" class="tool type05"><span>복합형03</span></button>
+                                <button type="button" class="tool type06"><span>복합형04</span></button>
+                            </div>
+                        </div>
+                        <div class="divide4">
+                            <button type="button" class="tool type03"><span>4분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                                <button type="button" class="tool type03"><span>복합형</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="drawWidget">
+                    <button type="button" class="tool"><span>그리기</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>포인트</span></button>
+                        <button type="button" class="tool type02"><span>텍스트</span></button>
+                        <button type="button" class="tool type03"><span>라인</span></button>
+                        <button type="button" class="tool type04"><span>자유형</span></button>
+                        <button type="button" class="tool type05"><span>폴리곤</span></button>
+                        <button type="button" class="tool type06"><span>사각형</span></button>
+                        <button type="button" class="tool type07"><span>원형</span></button>
+                        <button type="button" class="tool type08"><span>버퍼</span></button>
+                    </div>
+                </li>
+                <li class="measureWidget">
+                    <button type="button" class="tool"><span>측정</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>거리</span></button>
+                        <button type="button" class="tool type02"><span>면적</span></button>
+                        <button type="button" class="tool type03"><span>지점</span></button>
+                        <button type="button" class="tool type04"><span>반경</span></button>
+                    </div>
+                </li>
+                <li class="resetWidget">
+                    <button type="button" class="tool"><span>초기화</span></button>
+                </li>
+                <li class="printWidget">
+                    <button type="button" class="tool"><span>출력</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>JPG</span></button>
+                        <button type="button" class="tool type02"><span>PDF</span></button>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnGroup">
+                <button type="button" class="btnLeft" disabled><span class="hidden">이전</span></button>
+                <button type="button" class="btnRight"><span class="hidden">다음</span></button>
+            </div>
+        </div>
+        <div class="group">
+            <ul class="dep1">
+                <li class="basemapWidget">
+                    <button type="button" class="tool"><span>배경지도</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>기본지도</span></button>
+                        <button type="button" class="tool type02"><span>영상지도</span></button>
+                        <button type="button" class="tool type03"><span>영어지도</span></button>
+                    </div>
+                </li>
+                <li class="divideWidget">
+                    <button type="button" class="tool"><span>분할지도</span></button>
+                    <div class="dep2">
+                        <div class="divide2">
+                            <button type="button" class="tool type01"><span>2분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                            </div>
+                        </div>
+                        <div class="divide3">
+                            <button type="button" class="tool type02"><span>3분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                                <button type="button" class="tool type03"><span>복합형01</span></button>
+                                <button type="button" class="tool type04"><span>복합형02</span></button>
+                                <button type="button" class="tool type05"><span>복합형03</span></button>
+                                <button type="button" class="tool type06"><span>복합형04</span></button>
+                            </div>
+                        </div>
+                        <div class="divide4">
+                            <button type="button" class="tool type03"><span>4분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                                <button type="button" class="tool type03"><span>복합형</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="drawWidget">
+                    <button type="button" class="tool"><span>그리기</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>포인트</span></button>
+                        <button type="button" class="tool type02"><span>텍스트</span></button>
+                        <button type="button" class="tool type03"><span>라인</span></button>
+                        <button type="button" class="tool type04"><span>자유형</span></button>
+                        <button type="button" class="tool type05"><span>폴리곤</span></button>
+                        <button type="button" class="tool type06"><span>사각형</span></button>
+                        <button type="button" class="tool type07"><span>원형</span></button>
+                    </div>
+                </li>
+                <li class="measureWidget">
+                    <button type="button" class="tool"><span>측정</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>거리</span></button>
+                        <button type="button" class="tool type02"><span>면적</span></button>
+                        <button type="button" class="tool type03"><span>지점</span></button>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnGroup">
+                <button type="button" class="btnLeft"><span class="hidden">이전</span></button>
+                <button type="button" class="btnRight"><span class="hidden">다음</span></button>
+            </div>
+        </div>
+        <div class="group">
+            <ul class="dep1">
+                <li class="basemapWidget">
+                    <button type="button" class="tool"><span>배경지도</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>기본지도</span></button>
+                        <button type="button" class="tool type02"><span>영상지도</span></button>
+                        <button type="button" class="tool type03"><span>영어지도</span></button>
+                    </div>
+                </li>
+                <li class="divideWidget">
+                    <button type="button" class="tool"><span>분할지도</span></button>
+                    <div class="dep2">
+                        <div class="divide2">
+                            <button type="button" class="tool type01"><span>2분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                            </div>
+                        </div>
+                        <div class="divide3">
+                            <button type="button" class="tool type02"><span>3분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                                <button type="button" class="tool type03"><span>복합형01</span></button>
+                                <button type="button" class="tool type04"><span>복합형02</span></button>
+                                <button type="button" class="tool type05"><span>복합형03</span></button>
+                                <button type="button" class="tool type06"><span>복합형04</span></button>
+                            </div>
+                        </div>
+                        <div class="divide4">
+                            <button type="button" class="tool type03"><span>4분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                                <button type="button" class="tool type03"><span>복합형</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="drawWidget">
+                    <button type="button" class="tool"><span>그리기</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>포인트</span></button>
+                        <button type="button" class="tool type02"><span>텍스트</span></button>
+                        <button type="button" class="tool type03"><span>라인</span></button>
+                        <button type="button" class="tool type04"><span>자유형</span></button>
+                        <button type="button" class="tool type05"><span>폴리곤</span></button>
+                        <button type="button" class="tool type06"><span>사각형</span></button>
+                        <button type="button" class="tool type07"><span>원형</span></button>
+                    </div>
+                </li>
+                <li class="measureWidget">
+                    <button type="button" class="tool"><span>측정</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>거리</span></button>
+                        <button type="button" class="tool type02"><span>면적</span></button>
+                        <button type="button" class="tool type03"><span>지점</span></button>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnGroup">
+                <button type="button" class="btnLeft"><span class="hidden">이전</span></button>
+                <button type="button" class="btnRight"><span class="hidden">다음</span></button>
+            </div>
+        </div>
+        <div class="group">
+            <ul class="dep1">
+                <li class="basemapWidget">
+                    <button type="button" class="tool"><span>배경지도</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>기본지도</span></button>
+                        <button type="button" class="tool type02"><span>영상지도</span></button>
+                        <button type="button" class="tool type03"><span>영어지도</span></button>
+                    </div>
+                </li>
+                <li class="divideWidget">
+                    <button type="button" class="tool"><span>분할지도</span></button>
+                    <div class="dep2">
+                        <div class="divide2">
+                            <button type="button" class="tool type01"><span>2분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                            </div>
+                        </div>
+                        <div class="divide3">
+                            <button type="button" class="tool type02"><span>3분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                                <button type="button" class="tool type03"><span>복합형01</span></button>
+                                <button type="button" class="tool type04"><span>복합형02</span></button>
+                                <button type="button" class="tool type05"><span>복합형03</span></button>
+                                <button type="button" class="tool type06"><span>복합형04</span></button>
+                            </div>
+                        </div>
+                        <div class="divide4">
+                            <button type="button" class="tool type03"><span>4분할</span></button>
+                            <div class="dep3">
+                                <button type="button" class="tool type01"><span>세로분할</span></button>
+                                <button type="button" class="tool type02"><span>가로분할</span></button>
+                                <button type="button" class="tool type03"><span>복합형</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="drawWidget">
+                    <button type="button" class="tool"><span>그리기</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>포인트</span></button>
+                        <button type="button" class="tool type02"><span>텍스트</span></button>
+                        <button type="button" class="tool type03"><span>라인</span></button>
+                        <button type="button" class="tool type04"><span>자유형</span></button>
+                        <button type="button" class="tool type05"><span>폴리곤</span></button>
+                        <button type="button" class="tool type06"><span>사각형</span></button>
+                        <button type="button" class="tool type07"><span>원형</span></button>
+                    </div>
+                </li>
+                <li class="measureWidget">
+                    <button type="button" class="tool"><span>측정</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>거리</span></button>
+                        <button type="button" class="tool type02"><span>면적</span></button>
+                        <button type="button" class="tool type03"><span>지점</span></button>
+                    </div>
+                </li>
+                <li class="drawWidget">
+                    <button type="button" class="tool"><span>그리기</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>포인트</span></button>
+                        <button type="button" class="tool type02"><span>텍스트</span></button>
+                        <button type="button" class="tool type03"><span>라인</span></button>
+                        <button type="button" class="tool type04"><span>자유형</span></button>
+                        <button type="button" class="tool type05"><span>폴리곤</span></button>
+                        <button type="button" class="tool type06"><span>사각형</span></button>
+                        <button type="button" class="tool type07"><span>원형</span></button>
+                    </div>
+                </li>
+                <li class="measureWidget">
+                    <button type="button" class="tool"><span>측정</span></button>
+                    <div class="dep2">
+                        <button type="button" class="tool type01"><span>거리</span></button>
+                        <button type="button" class="tool type02"><span>면적</span></button>
+                        <button type="button" class="tool type03"><span>지점</span></button>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnGroup">
+                <button type="button" class="btnLeft"><span class="hidden">이전</span></button>
+                <button type="button" class="btnRight" disabled><span class="hidden">다음</span></button>
+            </div>
+        </div>
+    </div>
+    <!--zoom-->
+    <div class="zoomWidget">
+        <button type="button" class="btnZoom in"><span class="hidden">확대</span></button>
+        <div class="sliderArea">
+            <div class="slideBar mapStyle"></div>
+            <div class="tooltip">
+                <ul>
+                    <li>읍면동</li>
+                    <li>시군구</li>
+                    <li>시도</li>
+                </ul>
+            </div>
+        </div>
+        <button type="button"class="btnZoom out"><span class="hidden">축소</span></button>
+    </div>
+    <!--//zoom-->
+</div>
+                        </div>
+                        <!--//contentArea-->
+                    </div>
+                    <!--//cont-->
+
+                    <!--foot-->
+                    <div class="foot">
+                        <p>COPYRIGHT(C) LX, ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <!--//foot-->
+                </div>
+                <!--//sampleFrame-->
+            </div>
+            <!--//app-->
+
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+<script>
+    $('.btnSample').on({
+        "click":function (){
+            var idx = $(this).index()+1;
+            $('.sampleFrame').removeClass('style01').removeClass('style02');
+            $('.sampleFrame').addClass('style0'+idx)
+        }
+    })
+</script>
+</body>
+</html>

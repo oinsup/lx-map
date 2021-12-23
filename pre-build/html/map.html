@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+    <!--wrap-->
+    <div id="wrap">
+        <!--header-->
+        @@include('include/header.html')
+        <!--//header-->
+        <!--TOC-->
+        @@include('include/toc.html')
+        <!--//TOC-->
+        <!--analysis-->
+        @@include('include/analysis.html')
+        <!--//analysis-->
+        <!--mapContainer-->
+        <div class="mapContainer">
+            <!--mapArea-->
+            <div class="mapArea">
+                <!--map-->
+                <div id="map" style="background:#ccc;"></div>
+                <!--//map-->
+
+                <!--userMenu-->
+                @@include('include/userMenu.html')
+                <!--//userMenu-->
+
+                <!--widget-->
+                @@include('include/widget.html')
+                <!--//widget-->
+
+                <!--location-->
+                @@include('include/location.html')
+                <!--//location-->
+
+                <!--scaleWidget-->
+                @@include('include/scaleWidget.html')
+                <!--//scaleWidget-->
+
+                <!--smallToc-->
+                <div class="smallToc">
+                    <button type="button" class="btnSmallToc">
+                        <span class="hidden">열기/닫기</span>
+                    </button>
+                    <div class="layerList">
+                        <!--layerBox-->
+                        <div class="layerBox">
+                            <div class="tit">
+                                <i class="ico ico-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <g transform="translate(-101 -327)">
+                                            <path fill="none" d="M0 0h13v13H0z" transform="translate(101 328)"></path>
+                                            <circle cx="6.5" cy="6.5" r="6.5" fill="#ffb375" transform="translate(103 327)"></circle>
+                                            <circle cx="4.5" cy="4.5" r="4.5" fill="#ff7200" transform="translate(105 329)"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <p>레이어명</p>
+                            </div>
+                            <div class="btnGroup">
+                                <button type="button" class="btnLayerView"><span class="hidden">보이기/숨기기</span></button>
+                            </div>
+                        </div>
+                        <!--//layerBox-->
+                        <!--layerBox-->
+                        <div class="layerBox">
+                            <div class="tit">
+                                <i class="ico ico-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <g transform="translate(-101 -327)">
+                                            <path fill="none" d="M0 0h13v13H0z" transform="translate(101 328)"></path>
+                                            <circle cx="6.5" cy="6.5" r="6.5" fill="#ffb375" transform="translate(103 327)"></circle>
+                                            <circle cx="4.5" cy="4.5" r="4.5" fill="#ff7200" transform="translate(105 329)"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <p>레이어명</p>
+                            </div>
+                            <div class="btnGroup">
+                                <button type="button" class="btnLayerView"><span class="hidden">보이기/숨기기</span></button>
+                            </div>
+                        </div>
+                        <!--//layerBox-->
+                        <!--layerBox-->
+                        <div class="layerBox">
+                            <div class="tit">
+                                <i class="ico ico-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <g transform="translate(-101 -327)">
+                                            <path fill="none" d="M0 0h13v13H0z" transform="translate(101 328)"></path>
+                                            <circle cx="6.5" cy="6.5" r="6.5" fill="#ffb375" transform="translate(103 327)"></circle>
+                                            <circle cx="4.5" cy="4.5" r="4.5" fill="#ff7200" transform="translate(105 329)"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <p>레이어명</p>
+                            </div>
+                            <div class="btnGroup">
+                                <button type="button" class="btnLayerView"><span class="hidden">보이기/숨기기</span></button>
+                            </div>
+                        </div>
+                        <!--//layerBox-->
+                        <!--layerBox-->
+                        <div class="layerBox">
+                            <div class="tit">
+                                <i class="ico ico-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <g transform="translate(-101 -327)">
+                                            <path fill="none" d="M0 0h13v13H0z" transform="translate(101 328)"></path>
+                                            <circle cx="6.5" cy="6.5" r="6.5" fill="#ffb375" transform="translate(103 327)"></circle>
+                                            <circle cx="4.5" cy="4.5" r="4.5" fill="#ff7200" transform="translate(105 329)"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <p>레이어명</p>
+                            </div>
+                            <div class="btnGroup">
+                                <button type="button" class="btnLayerView"><span class="hidden">보이기/숨기기</span></button>
+                            </div>
+                        </div>
+                        <!--//layerBox-->
+                        <!--layerBox-->
+                        <div class="layerBox">
+                            <div class="tit">
+                                <i class="ico ico-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                        <g transform="translate(-101 -327)">
+                                            <path fill="none" d="M0 0h13v13H0z" transform="translate(101 328)"></path>
+                                            <circle cx="6.5" cy="6.5" r="6.5" fill="#ffb375" transform="translate(103 327)"></circle>
+                                            <circle cx="4.5" cy="4.5" r="4.5" fill="#ff7200" transform="translate(105 329)"></circle>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <p>레이어명</p>
+                            </div>
+                            <div class="btnGroup">
+                                <button type="button" class="btnLayerView"><span class="hidden">보이기/숨기기</span></button>
+                            </div>
+                        </div>
+                        <!--//layerBox-->
+                    </div>
+                </div>
+                <!--//smallToc-->
+
+            </div>
+            <!--//mapArea-->
+            <!--optionTable-->
+            <div id="optionTable" class="gridWidget active">
+                <!--head-->
+                <div class="head">
+                    <strong class="titOpTable">속성 테이블</strong>
+                    <div class="btnGroup">
+                        <button type="button" class="btn scale up"><span class="hidden">확대</span></button>
+                        <button type="button" class="btn scale down"><span class="hidden">축소</span></button>
+                        <button type="button" class="btnOpTableHide"><span class="hidden">숨기기</span></button>
+                        <button type="button" class="btnOpTableClose"><span class="hidden">닫기</span></button>
+                    </div>
+                </div>
+                <!--//head-->
+                <!--cont-->
+                <div class="cont">
+                    <div class="inner flex ac">
+                        <div class="btnArea">
+                            <button type="button" class="btn blue"><span>결과 다운로드</span><i class="ico rt ico-op-down"></i></button>
+                            <button type="button" class="btn blue"><span>레이어 발행</span><i class="ico rt ico-op-layer"></i></button>
+                            <button type="button" class="btn grey2"><span>취소</span><i class="ico rt ico-op-cancel"></i></button>
+                        </div>
+                        <div class="btnArea">
+                            <button type="button" class="btn blue btnIconBox setting"><span class="tip">속성설정</span></button>
+                            <button type="button" class="btn blue btnIconBox chart"><span class="tip">차트</span></button>
+                            <button type="button" class="btn blue btnIconBox filterAdd"><span class="tip">필터추가</span></button>
+                            <div class="pos-r">
+                                <button type="button" class="btn blue btnIconBox down"><span class="tip">데이터추출</span></button>
+                                <div class="inList">
+                                    <div class="tagList download">
+                                        <a href="#">
+                                            <span class="tag green">SHP</span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="tag blue">CSV</span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="tag peacock">GeoJSON</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn blue btnIconBox save"><span class="tip">저장</span></button>
+                        </div>
+                        <div class="searchCont">
+                            <!--
+                            <div class="group">
+                                <select style="width:210px;">
+                                    <option value="선택한 행 숨김" selected>선택한 행 숨김</option>
+                                </select>
+                                <button type="button" class="btn grey2"><span>확인</span></button>
+                            </div>
+                            -->
+                            <div class="group">
+                                <select style="width:120px;">
+                                    <option value="공간검색" selected>공간검색</option>
+                                </select>
+                                <button type="button" class="btn blue2 btnIconBox search"><span class="tip">조회</span></button>
+                                <button type="button" class="btn blue2 btnIconBox edit"><span class="tip">편집</span></button>
+                                <button type="button" class="btn blue2 btnIconBox submit"><span class="tip">확인</span></button>
+                                <button type="button" class="btn blue2 btnIconBox save"><span class="tip">저장</span></button>
+                                <button type="button" class="btn blue2 btnIconBox add"><span class="tip">추가</span></button>
+                                <button type="button" class="btn blue2 btnIconBox remove"><span class="tip">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="btnArea flex ac">
+                            <div class="checkbox" style="margin-right:10px;">
+                                <input type="checkbox" id="chkEdit"/>
+                                <label for="chkEdit">편집모드</label>
+                            </div>
+                            <button type="button" class="btn white btnIconBox save2"><span class="tip">저장</span></button>
+                            <button type="button" class="btn white btnIconBox filterReset"><span class="tip">필터초기화</span></button>
+                            <button type="button" class="btn white btnIconBox selectReset"><span class="tip lt">선택초기화</span></button>
+                        </div>
+                    </div>
+                    <div class="inner white">
+                        <!--sheetArea-->
+                        <div class="sheetArea"></div>
+                        <!--//sheetArea-->
+                    </div>
+                </div>
+                <!--//cont-->
+            </div>
+            <!--//optionTable-->
+        </div>
+        <!--//mapContainer-->
+    </div>
+    <!--//wrap-->
+    <!--popup-->
+    <div class="popup sm" style="width:310px;">
+        <!--head-->
+        <div class="head">
+            <strong class="titPop">옵션</strong>
+            <div class="btnGroup">
+                <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+            </div>
+        </div>
+        <!--//head-->
+        <!--cont-->
+        <div class="cont">
+            <div class="inner cScroll">
+                <!--section-->
+                <section class="section type03">
+                    <div class="titSec">
+                        <span class="titNum">1</span>
+                        <strong>검색거리</strong>
+                    </div>
+                    <div class="flex">
+                        <input type="number" style="width:130px;"/>
+                        <select style="width:135px;">
+                            <option value="cm" selected>cm</option>
+                            <option value="cm">cm</option>
+                            <option value="cm">cm</option>
+                        </select>
+                    </div>
+                </section>
+                <!--//section-->
+                <!--section-->
+                <section class="section type03">
+                    <div class="titSec">
+                        <span class="titNum">2</span>
+                        <strong>결과물을 다음에 맞게 잘라내기</strong>
+                    </div>
+                    <select style="width:100%;">
+                        <option value="처리 범위 선택" selected>처리 범위 선택</option>
+                    </select>
+                </section>
+                <!--//section-->
+                <!--section-->
+                <section class="section type03">
+                    <div class="titSec">
+                        <span class="titNum">3</span>
+                        <strong>분류 기준</strong>
+                    </div>
+                    <select style="width:100%;">
+                        <option value="등간격" selected>등간격</option>
+                    </select>
+                </section>
+                <!--//section-->
+                <!--section-->
+                <section class="section type03">
+                    <div class="titSec">
+                        <span class="titNum">4</span>
+                        <strong>클래스 수</strong>
+                    </div>
+                    <select style="width:100%;">
+                        <option value="10" selected>10</option>
+                    </select>
+                </section>
+                <!--//section-->
+                <!--section-->
+                <section class="section type03 noLine">
+                    <div class="titSec">
+                        <span class="titNum">5</span>
+                        <strong>결과 면적 단위</strong>
+                    </div>
+                    <select style="width:100%;">
+                        <option value="제곱미터" selected>제곱미터</option>
+                    </select>
+                    <div class="radioGroup row" style="margin:10px 10px 0 10px;">
+                        <div class="radio type02">
+                            <input type="radio" name="radio2" id="radio2-1" />
+                            <label for="radio2-1">값</label>
+                        </div>
+                        <div class="radio type02">
+                            <input type="radio" name="radio2" id="radio2-2" />
+                            <label for="radio2-2">필드</label>
+                        </div>
+                        <div class="radio type02">
+                            <input type="radio" name="radio2" id="radio2-3" />
+                            <label for="radio2-3">고유값</label>
+                        </div>
+                    </div>
+                </section>
+                <!--//section-->
+                <div class="btnArea flexRight" style="margin-top:20px;">
+                    <button type="button" class="btn orange"><span>추가</span></button>
+                    <button type="button" class="btn blue2"><span>닫기</span></button>
+                </div>
+            </div>
+        </div>
+        <!--//cont-->
+
+    </div>
+    <!--//popup-->
+    <!--popup-->
+    <div class="popup poi" style="width:370px;">
+        <!--head-->
+        <div class="head blue">
+            <div class="comboBox type02">
+                <span class="titPop">속성</span>
+                <div class="comboList">
+                    <ul>
+                        <li>
+                            <span>선택1</span>
+                        </li>
+                        <li>
+                            <span>선택2</span>
+                        </li>
+                        <li>
+                            <span>선택3</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btnGroup">
+                <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+            </div>
+        </div>
+        <!--//head-->
+        <!--cont-->
+        <div class="cont">
+            <div class="inner">
+                <!--section-->
+                <section class="section type02">
+                    <div class="titSec">
+                        <strong>폭염 취약지 정보</strong>
+                        <div class="btnGroup">
+                            <button type="button" class="btnOptPrev"><span class="hidden">이전</span></button>
+                            <button type="button" class="btnOptNext"><span class="hidden">다음</span></button>
+                        </div>
+                    </div>
+                    <!--table-->
+                    <div class="table txt-center">
+                        <table>
+                            <caption>속성</caption>
+                            <colgroup>
+                                <col style="width:50%;"/>
+                                <col style="width:auto;"/>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">속성 1</th>
+                                <td>속성 1 값</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">속성 1</th>
+                                <td>속성 1 값</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">속성 1</th>
+                                <td>속성 1 값</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">속성 1</th>
+                                <td>속성 1 값</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">속성 1</th>
+                                <td>속성 1 값</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </section>
+                <!--//section-->
+            </div>
+        </div>
+        <!--//cont-->
+
+    </div>
+    <!--//popup-->
+    <!--popup-->
+    <div class="popup" style="width:776px;">
+        <!--head-->
+        <div class="head">
+            <strong class="titPop">속성 테이블</strong>
+            <div class="btnGroup">
+                <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+            </div>
+        </div>
+        <!--//head-->
+        <!--cont-->
+        <div class="cont">
+            <div class="inner">
+                <div class="resultArea">
+                    <dl>
+                        <dt class="noCont"><strong>전체 <span class="blue">21</span>건</strong></dt>
+                    </dl>
+                </div>
+                <!--table-->
+                <div class="table txt-center">
+                    <table>
+                        <caption>속성</caption>
+                        <colgroup>
+                            <col style="width:20%;"/>
+                            <col style="width:20%;"/>
+                            <col style="width:20%;"/>
+                            <col style="width:20%;"/>
+                            <col style="width:auto;"/>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">속성 1</th>
+                            <th scope="col">속성 2</th>
+                            <th scope="col">속성 3</th>
+                            <th scope="col">속성 4</th>
+                            <th scope="col">속성 5</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                        </tr>
+                        <tr>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                        </tr>
+                        <tr>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                        </tr>
+                        <tr>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                            <td>속성 값1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+            </div>
+        </div>
+        <!--//cont-->
+
+    </div>
+    <!--//popup-->
+
+</body>
+</html>

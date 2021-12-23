@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header.html')
+    <!--//header-->
+    <!--TOC-->
+    @@include('include/toc.html')
+    <!--//TOC-->
+    <!--analysis-->
+    @@include('include/analysis.html')
+    <!--//analysis-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--map-->
+            <div id="map" style="background:#ccc;"></div>
+            <!--//map-->
+
+            <!--userMenu-->
+            @@include('include/userMenu.html')
+            <!--//userMenu-->
+
+            <!--widget-->
+            @@include('include/widget.html')
+            <!--//widget-->
+
+            <!--location-->
+            @@include('include/location.html')
+            <!--//location-->
+
+            <!--scaleWidget-->
+            @@include('include/scaleWidget.html')
+            <!--//scaleWidget-->
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+<!--popup-->
+<div class="popup" style="width:1000px;">
+    <!--head-->
+    <div class="head blue">
+        <strong class="titPop">레이어 검색</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont layerSearchWidget">
+        <div class="inner noPd cScroll" style="max-height:650px;">
+            <div class="flex">
+                <div class="layerMenu">
+                    <dl class="dep cScroll">
+                        <dt>구분</dt>
+                        <dd><span>워크플로우</span></dd>
+                        <dd class="active"><span>전체</span></dd>
+                        <dd><span>국가공간정보</span></dd>
+                        <dd><span>사용자데이터</span></dd>
+                        <dd>
+                            <span>공유데이터</span>
+                            <ul>
+                                <li>전체 공유</li>
+                                <li>기관 공유</li>
+                                <li>사용자 공유</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="filter cScroll">
+                        <dt>필터</dt>
+                        <dd><i class="ico ico-all"></i><span>전체</span></dd>
+                        <dd class="active"><i class="ico ico-dot"></i><span>점</span><em>(POINT)</em></dd>
+                        <dd><i class="ico ico-line"></i><span>선</span><em>(LINE)</em></dd>
+                        <dd><i class="ico ico-plane"></i><span>면</span> <em>(POLYGON)</em></dd>
+                        <dd><i class="ico ico-g"></i><span>Geo Tiff</span></dd>
+                        <dd><i class="ico ico-t"></i><span>Tiff</span></dd>
+                        <dd><i class="ico ico-layerGroup"></i><span>레이어그룹</span></dd>
+                    </dl>
+                </div>
+                <div class="inner cScroll" style="max-height:650px;">
+                    <!--searchArea-->
+                    <div class="searchArea">
+                        <div class="inputBox">
+                            <input type="text" style="width:100%;" placeholder="레이어명으로 검색"/>
+                            <button type="button" class="btn blue2"><span class="hidden">검색</span></button>
+                        </div>
+                    </div>
+                    <!--//searchArea-->
+                    <!--resultArea-->
+                    <div class="resultArea" style="margin:19px 0;">
+                        <dl>
+                            <dt class="noCont"><strong>전체 '<span class="orange">(점)</span>'건에 관한 검색결과는 총 <span class="blue">17</span>건입니다.</strong></dt>
+                        </dl>
+                        <div class="btnArea">
+                            <button type="button" class="btn up sort" style="margin-right:5px;"><span>레이어명 오름차순</span><span>레이어명 내림차순</span></button>
+                            <button type="button" class="btn up sort"><span>수정일자 오름차순</span><span>수정일자 내림차순</span></button>
+                        </div>
+                    </div>
+                    <!--//resultArea-->
+                    <!--table-->
+                    <div class="table txt-center hover cScroll" style="max-height:489px">
+                        <table>
+                            <caption>검색결과</caption>
+                            <colgroup>
+                                <col style="width:48px;">
+                                <col style="width:135px;">
+                                <col style="width:162px;">
+                                <col style="width:auto;">
+                                <col style="width:48px;">
+                                <col style="width:48px;">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">종류</th>
+                                <th scope="col">서비스</th>
+                                <th scope="col">레이어명</th>
+                                <th scope="col">레이어설명</th>
+                                <th scope="col">추가</th>
+                                <th scope="col">삭제</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="icoBox">
+                                        <i class="ico ico-svg">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="레이어_점선면" data-name="레이어 점선면" width="13" height="13">
+                                                <defs>
+                                                    <style>
+                                                        .cls-2{fill:none;stroke:#ff7200}.cls-3{fill:#ff7200}
+                                                    </style>
+                                                </defs>
+                                                <path id="패스_8045" data-name="패스 8045" d="M0 0h13v13H0z" style="fill:none"/>
+                                                <g id="그룹_29161" data-name="그룹 29161" transform="translate(1.674 1.745)">
+                                                    <path id="패스_21978" data-name="패스 21978" class="cls-2" d="M102.959 329.254v4.928l4.867 2.277 4.88-2.277v-4.928l-4.88-2.331z" transform="translate(-102.959 -326.923)"/>
+                                                    <path id="패스_21980" data-name="패스 21980" class="cls-2" d="m103.129 332.665 4.823-2.411 4.808 2.411" transform="translate(-103.014 -325.51)"/>
+                                                    <path id="패스_21981" data-name="패스 21981" class="cls-2" d="m103.129 330.254 4.823 2.411 4.808-2.411" transform="translate(-103.014 -327.893)"/>
+                                                </g>
+                                                <g id="그룹_29162" data-name="그룹 29162">
+                                                    <circle id="Ellipse_770_copy" data-name="Ellipse 770 copy" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(5 5)"/>
+                                                    <circle id="Ellipse_770_copy-2" data-name="Ellipse 770 copy" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(5)"/>
+                                                    <circle id="Ellipse_770_copy-3" data-name="Ellipse 770 copy" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(0 3)"/>
+                                                    <circle id="Ellipse_770_copy-4" data-name="Ellipse 770 copy" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(0 8)"/>
+                                                    <circle id="Ellipse_770_copy-5" data-name="Ellipse 770 copy" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(5 10)"/>
+                                                    <circle id="Ellipse_770_copy-6" data-name="Ellipse 770 copy" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(10 8)"/>
+                                                    <circle id="Ellipse_770_copy-7" data-name="Ellipse 770 copy" class="cls-3" cx="1.5" cy="1.5" r="1.5" transform="translate(10 3)"/>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                    </div>
+                                </td>
+                                <td><img src="../images/common/ico-WCS.png" alt="WCS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="icoBox"><i class="ico ico-line"></i></div></td>
+                                <td><img src="../images/common/ico-WMS.png" alt="WMS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="icoBox"><i class="ico ico-line"></i></div></td>
+                                <td><img src="../images/common/ico-WFS.png" alt="WFS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="icoBox"><i class="ico ico-line"></i></div></td>
+                                <td><img src="../images/common/ico-WMTS.png" alt="WMTS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="icoBox"><i class="ico ico-line"></i></div></td>
+                                <td><img src="../images/common/ico-WMTS.png" alt="WMTS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="icoBox"><i class="ico ico-line"></i></div></td>
+                                <td><img src="../images/common/ico-WMTS.png" alt="WMTS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="icoBox"><i class="ico ico-line"></i></div></td>
+                                <td><img src="../images/common/ico-WMTS.png" alt="WMTS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="icoBox"><i class="ico ico-line"></i></div></td>
+                                <td><img src="../images/common/ico-WMTS.png" alt="WMTS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="icoBox"><i class="ico ico-line"></i></div></td>
+                                <td><img src="../images/common/ico-WMTS.png" alt="WMTS"/></td>
+                                <td>[점] 화장실 데이터</td>
+                                <td class="txt-left">화장실 데이터
+                                    <p class="sub">[공유자 : 오임자 / 공유일자 : 2020-07-13]</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInAdd"><span class="hidden">추가</span></button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnInRemove"><span class="hidden">삭제</span></button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

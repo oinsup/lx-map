@@ -1,0 +1,168 @@
+
+
+
+/* toc */
+#toc,#analysis,#detailSetting,#library{display:none;height:100%;z-index:10;
+  &.active{display:flex;
+    .toc{
+      .inner{width:370px;height:100%;}
+      .head{height:50px;}
+      &.hide{
+        .inner{width:50px;height:100%;}
+        .head{visibility: visible;}
+      }
+    }
+  }
+  .toc{height:100%;box-shadow:3px 4px 5px 0 rgba(0, 0, 0, 0.2);position:relative;
+    .inner{width:0;height:0;}
+    .head{overflow: hidden;display:flex;justify-content:space-between;height:0;transition:.4s;
+      .titBox{display:flex;align-items:center;}
+      .titToc{max-width:220px;overflow:hidden;text-overflow: ellipsis;white-space:nowrap;margin-left:20px;line-height:50px;color:#fff;font-size:20px;
+        font-family:"Pretendard";font-weight: normal;}
+      &>.titToc{flex:1;max-width:inherit;}
+      .btnGroup{display:flex;align-items:center;margin-right:20px;}
+      .btnTocClose{margin-left:30px;width:24px;height:24px;background:url("../images/toc/ico-toc-close.png");}
+      .btnTocHide{width:14px;height:26px;background:url("../images/toc/ico-toc-hide.png")no-repeat center;}
+    }
+    .cont{max-height:calc(100% - 50px);
+      .inner{width:auto;padding:9px 11px;
+        &.type02{padding:20px;}
+        &.layer{padding:30px 11px 9px 11px;}
+      }
+    }
+    &.dep1{z-index:10;
+      .head{background:#2F5597;}
+      .inner{background:#f6f9fe;}
+    }
+    &.dep2{
+      .head{background:#8FAADC;}
+      .inner{background:#fff;}
+    }
+    &.hide{
+      .inner{width:0;height:0;}
+      .head{visibility:hidden;height:100%;justify-content:flex-end;flex-direction: column-reverse;
+        .titBox{flex-direction:column;
+          .btnTip{margin-left:3px;margin-top:15px;}
+        }
+        .titToc{writing-mode: vertical-lr;margin-left:0;margin-top:15px;}
+        .btnGroup{margin:19px 0 0 0;flex-direction: column-reverse;
+          .btnTocHide{transform:rotate(180deg);}
+          .btnTocClose{margin:0 0 19px 0;}
+        }
+      }
+      .cont{display:none;}
+    }
+    .tocTool{display:flex;justify-content:space-between;align-items:center;
+      .btnGroup{display:flex;
+        &:last-of-type{
+          button{width:27px;height:25px;margin:0;
+            &.btnAllView{margin-right:2px;background-image:url("../images/toc/ico-toc-all-view-hide.png");
+              &:hover,&.active{background-image:url("../images/toc/ico-toc-all-view-show.png");}
+            }
+            &.btnAllRemove{background-image:url("../images/toc/ico-toc-all-remove-hide.png");
+              &:hover{background-image:url("../images/toc/ico-toc-all-remove-show.png");}
+            }
+          }
+        }
+      }
+      button{margin-right:30px;text-indent:16px;color:#2F5597;font-size:16px;font-family:'Pretendard Bold';
+        &.btnTocAdd{background:url("../images/toc/ico-toctool-add.png")no-repeat left center;}
+        &.btnTocSearch{background:url("../images/toc/ico-toctool-search.png")no-repeat left center;}
+        &.btnTocUpload{margin-right:0;background:url("../images/toc/ico-toctool-upload.png")no-repeat left center;}
+      }
+    }
+    .groupList{margin-top:10px;padding-right:3px;
+      .groupBox{margin-bottom:10px;padding:20px 10px 20px 20px;background:#fff;border:1px solid #eef1f8;border-radius:4px;cursor:pointer;
+        &:last-of-type{margin-bottom:0;}
+        .row{position:relative;display:flex;justify-content:space-between;}
+        .titGroup{display:block;padding-left:25px;font-size:16px;font-family:'Pretendard Bold';max-width:185px;color:#555;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+          line-height:20px;overflow:hidden;text-overflow:ellipsis;word-break:break-all;background:url("../images/toc/ico-group-hide.png")no-repeat left 2px;}
+        .btnGroup{display:flex;align-items: center;
+          button{width:27px;height:27px;background-repeat:no-repeat;
+
+            &.btnGroupView{margin-right:6px;background-image:url("../images/toc/ico-group-view-hide.png");
+              &:hover,&.active{background-image:url("../images/toc/ico-group-view-show.png");}
+            }
+            &.btnGroupRemove{background-image:url("../images/toc/ico-group-remove-hide.png");
+              &:hover,&.active{background-image:url("../images/toc/ico-group-remove-show.png");}
+            }
+            &.btnGroupEdit{margin-right:6px;background-image:url("../images/toc/ico-group-edit.png");
+              &:hover,&.active{background-image:url("../images/toc/ico-group-edit-hover.png");}
+            }
+          }
+        }
+        &.active{
+          .titGroup{color:#1a1a1a;background:url("../images/toc/ico-group-show.png")no-repeat left 2px;}
+          .layerList{display:block;}
+        }
+        .layerList{
+          .layerBox{
+            &:last-of-type{border-bottom:0;}
+          }
+        }
+      }
+    }
+    .layerList{display:none;margin-top:12px;
+      .layerBox{padding:0;cursor:pointer;border:0;border-bottom:1px solid #eef1f8;}
+    }
+    .layerBox{padding:8px 10px 10px;background:#fff;border:1px solid #eef1f8;border-radius:4px;
+      .inner{position:relative;padding:10px;background:#fff;}
+      .editBox{top:10px;transform:translate(0);justify-content:center;}
+      &:hover{
+        .inner{background:#f6f9fe;}
+        .editBox{background:#f6f9fe;}
+      }
+      .tit{display:flex;font-size:16px;font-family:'Pretendard';font-weight:normal;
+        i.ico{display:block;width:20px;height:20px;margin-right:0;background-position:center;background-size:100%;
+          &.ico-dot{background-image: url("../images/toc/ico-layer-dot.png");}
+          &.ico-line{background-image: url("../images/toc/ico-layer-line.png");}
+          &.ico-plane{background-image: url("../images/toc/ico-layer-plane.png");}
+          &.ico-hitmap{background-image: url("../images/toc/ico-layer-hitmap.png");}
+        }
+        p{flex:1;padding-right:5px;margin-left:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;color:#686868;font-size:15px;
+          line-height:20px;overflow:hidden;text-overflow:ellipsis;word-break:break-all;}
+      }
+      .btnGroup{display:flex;margin-top:25px;justify-content: flex-end;
+        button{width:27px;height:27px;margin-right:5px;background-position:center;background-repeat:no-repeat;
+          &.btnLayerEdit{background-image: url("../images/toc/ico-edit.png");
+            &:hover,&.active{background-image: url("../images/toc/ico-edit-hover.png");}
+          }
+          &.btnLayerRemove{background-image: url("../images/toc/ico-remove.png");
+            &:hover,&.active{background-image: url("../images/toc/ico-remove-hover.png");}
+          }
+          &.btnLayerView{background-image: url("../images/toc/ico-view.png");
+            &:hover,&.active{background-image: url("../images/toc/ico-view-hover.png");}
+          }
+          &.btnLayerBookmark{background-image: url("../images/toc/ico-bookmark.png");
+            &:hover,&.active{background-image: url("../images/toc/ico-bookmark-hover.png");}
+          }
+          &.btnLayerProperty{background-image: url("../images/toc/ico-option.png");
+            &:hover,&.active{background-image: url("../images/toc/ico-option-hover.png");}
+          }
+          &.btnLayerMore{margin-right:0;background-image: url("../images/toc/ico-layer-more.png");
+            &:hover,&.active{background-image: url("../images/toc/ico-layer-more-hover.png");}
+          }
+        }
+      }
+    }
+  }
+}
+
+.btnGroup.tooltipGroup{
+  button{position:relative;
+    &:hover{
+      .hidden{position:absolute;left:50%;top:-30px;width:auto;height:auto;padding:0 8px;visibility:visible;transform:translateX(-50%);
+      background: #fff;border:1px solid #eef1f8;box-sizing:border-box;word-break:keep-all;font-size:14px;line-height:24px;color:#555;font-family:'Pretendard';}
+    }
+  }
+}
+
+#library{
+  .accordion{
+    .toolList {
+      > li {
+        li {text-indent:0;padding:0 20px;}
+      }
+    }
+  }
+}

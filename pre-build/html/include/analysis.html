@@ -1,0 +1,202 @@
+
+<div id="analysis">
+    <!-- toc 1뎁스-->
+    <div class="toc dep1 tocWidget">
+        <div class="inner">
+            <!--head-->
+            <div class="head">
+                <strong class="titToc">웹맵 명</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnTocHide"><span class="hidden">숨기기</span></button>
+                </div>
+            </div>
+            <!--//head-->
+            <!--cont-->
+            <div class="cont">
+                <div class="inner">
+                    <!--accordion-->
+                    <div class="accordion">
+                        <ul class="toolList">
+                            <li class="hasDep">
+                                <span>데이터 요약분석</span>
+                                <ul class="innerList">
+                                    <li><span>2뎁스 메뉴</span></li>
+                                    <li><span>2뎁스 메뉴</span></li>
+                                    <li><span>2뎁스 메뉴</span></li>
+                                    <li><span>2뎁스 메뉴</span></li>
+                                </ul>
+                            </li>
+                            <li class="hasDep">
+                                <span>위치 찾기 분석</span>
+                                <ul class="innerList">
+                                    <li><span>2뎁스 메뉴</span></li>
+                                    <li><span>2뎁스 메뉴</span></li>
+                                    <li><span>2뎁스 메뉴</span></li>
+                                    <li><span>2뎁스 메뉴</span></li>
+                                </ul>
+                            </li>
+                            <li class="hasDep">
+                                <span>공간 패턴 분석</span>
+                                <ul class="innerList">
+                                    <li><span>밀도맵</span></li>
+                                    <li><span>핫스팟 찾기</span></li>
+                                    <li><span>군집 찾기</span></li>
+                                    <li><span>내삽 기능</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>근접도 분석</span>
+                            </li>
+                            <li>
+                                <span>데이터 관리 분석</span>
+                            </li>
+                            <li>
+                                <span>좌표변환</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//accordion-->
+                </div>
+            </div>
+            <!--//cont-->
+        </div>
+    </div>
+    <!--// toc 1뎁스-->
+    <!-- toc 2뎁스-->
+    <div class="toc dep2 popupWidget">
+        <div class="inner">
+            <!--head-->
+            <div class="head">
+                <div class="titBox">
+                    <strong class="titToc">밀도 맵</strong>
+                </div>
+                <div class="btnGroup">
+                    <button type="button" class="btnTocHide"><span class="hidden">숨기기</span></button>
+                    <button type="button" class="btnTocClose"><span class="hidden">숨기기</span></button>
+                </div>
+            </div>
+            <!--//head-->
+            <!--cont-->
+            <div class="cont cScroll">
+                <div class="inner type02">
+                    <!--section-->
+                    <section class="section" style="padding-bottom:20px;">
+                        <div class="titSec at">
+                            <span class="titNum">1</span>
+                            <strong>밀도를 계산할 포인트 또는 라인 레이어 선택</strong>
+                        </div>
+                        <select style="width:100%;">
+                            <option value="파일 업로드 shp" selected>파일 업로드 shp</option>
+                            <option value="파일 업로드 shp">파일 업로드 shp</option>
+                            <option value="파일 업로드 shp">파일 업로드 shp</option>
+                        </select>
+                    </section>
+                    <!--//section-->
+                    <!--section-->
+                    <section class="section" style="padding-bottom:20px;">
+                        <div class="titSec at">
+                            <span class="titNum">2</span>
+                            <strong>개수 필드 사용 (선택사항)</strong>
+                        </div>
+                        <div class="flex ac sb">
+                            <select style="flex:1;">
+                                <option value="필드 1" selected>필드 1</option>
+                                <option value="필드 1">필드 1</option>
+                                <option value="필드 1">필드 1</option>
+                            </select>
+                            <button type="button" class="btn black2" style="display:inline-block;"><span>옵션</span></button>
+                        </div>
+                    </section>
+                    <!--//section-->
+                    <!--section-->
+                    <section class="section" style="padding-bottom:20px;">
+                        <div class="titSec at">
+                            <span class="titNum">3</span>
+                            <strong>결과 레이어 이름</strong>
+                        </div>
+                        <div class="confirmBox" style="margin-bottom:20px;">
+                            <input type="text" style="width:100%" placeholder="파일 업로드 shp 밀도맵" />
+                            <span class="colorType red">이 값은 필수입니다.</span>
+                        </div>
+                        <div class="flex">
+                            <select style="width:160px;">
+                                <option value="필드 1" selected>필드 1</option>
+                            </select>
+                            <select style="width:160px;">
+                                <option value="통계" selected>통계</option>
+                            </select>
+                        </div>
+                        <div class="radioGroup col" style="margin-top:10px;">
+                            <div class="radio type02">
+                                <input type="radio" name="radio1" id="radio1-1" />
+                                <label for="radio1-1">중심에서</label>
+                            </div>
+                            <div class="radio type02">
+                                <input type="radio" name="radio1" id="radio1-2" />
+                                <label for="radio1-2">입력 피쳐에 포함됨</label>
+                            </div>
+                            <div class="flex">
+                                <div class="radio type02">
+                                    <input type="radio" name="radio1" id="radio1-3" />
+                                    <label for="radio1-3">반환된 위치 수 </label>
+                                </div>
+                                <input type="number" style="width:160px;"/>
+                            </div>
+                        </div>
+                    </section>
+                    <!--//section-->
+                    <!--section-->
+                    <section class="section" style="padding-bottom:20px;">
+                        <div class="titSec at">
+                            <span class="titNum">4</span>
+                            <strong>모든 위치를 사용하거나 원하는 위치를 <br/>선택할 수 있습니다.</strong>
+                        </div>
+                        <div class="btnArea flexRight">
+                            <button type="button" class="btn white"><span>직접 선택</span></button>
+                            <button type="button" class="btn white"><span>쿼리로 선택</span></button>
+                        </div>
+                    </section>
+                    <!--//section-->
+                    <!--section-->
+                    <section class="section noLine">
+                        <div class="checkbox">
+                            <input type="checkbox" id="chkMap"/>
+                            <label for="chkMap">현재 맵 범위 사용</label>
+                        </div>
+                    </section>
+                    <!--//section-->
+                    <div class="btnArea flexRight" style="margin-top:40px;">
+                        <button type="button" class="btn lg blue btnMapAnalysis"><span>분석실행</span></button>
+                    </div>
+
+                    <div class="transResult">
+                        <strong class="tit">변환 결과</strong>
+                        <div class="group">
+                            <div class="flex ac">
+                                <span class="num">1</span>
+                                <p>변환 결과 좌표</p>
+                            </div>
+                            <div class="flex ac jb">
+                                <input type="text" style="width:140px;"/>
+                                <input type="text" style="width:140px;"/>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="flex ac">
+                                <span class="num">2</span>
+                                <p>변환 결과 좌표(도분초)</p>
+                            </div>
+                            <span class="tip">변환좌표계가 EPSG 4004, EPSG 4019, EPSG 4326 의 경우 활성화됩니다.</span>
+                            <div class="flex ac jb">
+                                <input type="text" style="width:140px;"/>
+                                <input type="text" style="width:140px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//cont-->
+        </div>
+    </div>
+    <!--// toc 2뎁스-->
+</div>

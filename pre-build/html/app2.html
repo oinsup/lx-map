@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header2.html')
+    <!--//header-->
+    <!--detailSetting-->
+    @@include('include/detailSetting.html')
+    <!--//detailSetting-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+
+            </div>
+            <!--//app-->
+
+            <!--userMenu2-->
+            @@include('include/userMenu2.html')
+            <!--//userMenu2-->
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+<!--popup-->
+<div class="popup" style="width:900px;">
+    <!--head-->
+    <div class="head blue">
+        <strong class="titPop">섹션 테마 선택</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont">
+        <div class="inner cScroll" style="max-height:650px;">
+            <div class="choiceList">
+                <div class="box">
+                    <div class="inner">
+                        <strong>저널 테마 1</strong>
+                        <img src="../images/webapp/img-journal-01.png" alt="저널 테마 1"/>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inner">
+                        <strong>저널 테마 2</strong>
+                        <img src="../images/webapp/img-journal-02.png" alt="저널 테마 2"/>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inner">
+                        <strong>저널 테마 3</strong>
+                        <img src="../images/webapp/img-journal-03.png" alt="저널 테마 3"/>
+                    </div>
+                </div>
+            </div>
+            <div class="btnArea flexRight" style="margin-top:30px;">
+                <button type="button" class="btn black2 lg"><span>취소</span></button>
+                <button type="button" class="btn blue2 lg"><span>완료</span></button>
+            </div>
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

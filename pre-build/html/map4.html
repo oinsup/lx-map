@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header.html')
+    <!--//header-->
+    <!--TOC-->
+    @@include('include/toc.html')
+    <!--//TOC-->
+    <!--analysis-->
+    @@include('include/analysis.html')
+    <!--//analysis-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--map-->
+            <div id="map" style="background:#ccc;"></div>
+            <!--//map-->
+
+            <!--userMenu-->
+            @@include('include/userMenu.html')
+            <!--//userMenu-->
+
+            <!--widget-->
+            @@include('include/widget.html')
+            <!--//widget-->
+
+            <!--location-->
+            @@include('include/location.html')
+            <!--//location-->
+
+            <!--scaleWidget-->
+            @@include('include/scaleWidget.html')
+            <!--//scaleWidget-->
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+<!--popup-->
+<div class="popup" style="width:900px;">
+    <!--head-->
+    <div class="head blue">
+        <strong class="titPop">레이어 업로드</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont layerUploadWidget">
+        <div class="inner cScroll" style="max-height:650px;">
+            <!--tabContWrap-->
+            <div class="tabContWrap type07">
+                <!--tabNav-->
+                <div class="tabNav">
+                    <ul class="tabList">
+                        <li class="active">웹 레이어</li>
+                        <li>파일 레이어</li>
+                        <li>지오코딩</li>
+                    </ul>
+                </div>
+                <!--//tabNav-->
+                <!--tabCont-->
+                <div class="tabCont active">
+                    <!--section-->
+                    <section class="section type02">
+                        <div class="titSec">
+                            <strong>웹 레이어 기본 정보</strong>
+                        </div>
+                        <!--table-->
+                        <div class="table">
+                            <table>
+                                <caption>웹 레이어 기본 정보</caption>
+                                <colgroup>
+                                    <col style="width:150px;">
+                                    <col style="width:263px;">
+                                    <col style="width:150px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">레이어 명</th>
+                                    <td>
+                                        <input type="text" style="width:100%;" />
+                                    </td>
+                                    <th scope="row">레이어 유형</th>
+                                    <td>
+                                        <select style="width:100%;">
+                                            <option value="WFS 웹 레이어" selected>WFS 웹 레이어</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">URL</th>
+                                    <td>
+                                        <input type="text" style="width:100%;" />
+                                    </td>
+                                    <th scope="row">x/y 반전 여부</th>
+                                    <td>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chkXY"/>
+                                            <label for="chkXY"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">레이어 설명</th>
+                                    <td colspan="3">
+                                        <textarea style="width:100%;height:66px;"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </section>
+                    <!--//section-->
+                    <!--section-->
+                    <section class="section type02">
+                        <div class="titSec">
+                            <strong>맞춤 매개변수</strong>
+                            <button type="button" class="btn lightGrey"><i class="ico ico-add"></i><span>매개변수 추가</span></button>
+                        </div>
+                        <!--table-->
+                        <div class="table cScroll" style="max-height:172px;">
+                            <table>
+                                <caption>맞춤 매개변수</caption>
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="text" class="variable">
+                                    </th>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" style="width:100%;" />
+                                            <button type="button" class="btn lightGrey"><span class="hidden">삭제</span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="text" class="variable">
+                                    </th>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" style="width:100%;" />
+                                            <button type="button" class="btn lightGrey"><span class="hidden">삭제</span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="text" class="variable">
+                                    </th>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" style="width:100%;" />
+                                            <button type="button" class="btn lightGrey"><span class="hidden">삭제</span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                        <div class="btnArea flexRight" style="margin-top:20px;">
+                            <button type="button" class="btn orange lg"><span>레이어 추가<span></button>
+                        </div>
+                    </section>
+                    <!--//section-->
+                </div>
+                <!--//tabCont-->
+                <!--tabCont-->
+                <div class="tabCont">
+                    <!--uploadArea-->
+                    <div class="uploadArea">
+                        <p>업로드할 레이어 파일을 마우스로 끌어서 넣어주세요.</p>
+                    </div>
+                    <!--//uploadArea-->
+                    <!--section-->
+                    <section class="section type02">
+                        <div class="titSec">
+                            <strong>파일 레이어 기본정보</strong>
+                        </div>
+                        <!--table-->
+                        <div class="table">
+                            <table>
+                                <caption>파일 레이어 기본정보</caption>
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">레이어 명</th>
+                                    <td>
+                                        <input type="text" style="width:100%;" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">원본 좌표계</th>
+                                    <td>
+                                        <select style="width:100%;">
+                                            <option value="EPSG:XXXX" selected>EPSG:XXXX</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </section>
+                    <!--//section-->
+                    <div class="btnArea flexRight" style="margin-top:20px;">
+                        <button type="button" class="btn orange lg"><span>확인</span></button>
+                    </div>
+                </div>
+                <!--//tabCont-->
+                <!--tabCont-->
+                <div class="tabCont">
+                    <section class="section type03">
+                        <div class="titSec">
+                            <span class="titNum">1</span>
+                            <strong>파일 업로드</strong>
+                        </div>
+                        <!--uploadArea-->
+                        <div class="uploadArea">
+                            <p>업로드할 레이어 파일을 마우스로 끌어서 넣어주세요.</p>
+                        </div>
+                        <!--//uploadArea-->
+                        <!--table-->
+                        <div class="table">
+                            <table>
+                                <caption>지오코딩</caption>
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row" class="txt-left">
+                                        <div class="titSec">
+                                            <span class="titNum">2</span>
+                                            <strong>기준형식선택</strong>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="radioGroup flex ja">
+                                            <div class="radio">
+                                                <input type="radio" name="radio" id="radio1" checked/>
+                                                <label for="radio1">주소</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="radio" id="radio2"/>
+                                                <label for="radio2">PNU</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="radio" id="radio3"/>
+                                                <label for="radio3">경위도</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="titSec">
+                                            <span class="titNum">3</span>
+                                            <strong>기준필드선택</strong>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <select style="width:100%;">
+                                            <option value="EPSG:XXXX" selected>EPSG:XXXX</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="titSec">
+                                            <span class="titNum">4</span>
+                                            <strong>중심점기준</strong>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <input type="text" style="width:100%;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="titSec">
+                                            <span class="titNum">5</span>
+                                            <strong>레이어명</strong>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="confirmBox">
+                                            <input type="text" style="width:100%;"/>
+                                            <span class="colorType red">이 값은 필수입니다.</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </section>
+                    <div class="btnArea flexRight" style="margin-top:20px;">
+                        <button type="button" class="btn orange lg btnGeoPlay"><span>실행</span></button>
+                    </div>
+                </div>
+                <!--//tabCont-->
+            </div>
+            <!--//tabContWrap-->
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

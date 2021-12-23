@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header3.html')
+    <!--//header-->
+    <!--library-->
+    @@include('include/library.html')
+    <!--//library-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+
+            </div>
+            <!--//app-->
+
+            <!--userMenu2-->
+            @@include('include/userMenu2.html')
+            <!--//userMenu2-->
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+<!--popup-->
+<div class="popup" style="width:900px;">
+    <!--head-->
+    <div class="head">
+        <strong class="titPop">라이브러리 상세정보</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont">
+        <div class="inner cScroll" style="max-height:650px;">
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>라이브러리 상세</strong>
+                </div>
+                <!--table-->
+                <div class="table">
+                    <table>
+                        <caption>라이브러리 상세</caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">라이브러리 명</th>
+                            <td>포인트 집계</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">라이브러리 구분</th>
+                            <td>데이터 요약 분석</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">라이브러리 설명</th>
+                            <td>입력 레이어에 대해서 분석 칼럼과 유일 값을 가진 컬럼에 대하여
+                                포인트집계<br/>예) 정류장별 이용 고객</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+
+            </section>
+            <!--//section-->
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>인풋 파라미터 정의</strong>
+                </div>
+                <!--table-->
+                <div class="table txt-center cScroll" style="height:170px;">
+                    <table>
+                        <caption>인풋 파라미터 정의</caption>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width:168px;">
+                            <col style="width:153px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">파라미터 명</th>
+                            <th scope="col">데이터 타입</th>
+                            <th scope="col">연결 데이터</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+            </section>
+            <!--//section-->
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>아웃풋 테이블 상세</strong>
+                </div>
+                <!--table-->
+                <div class="table txt-center cScroll" style="height:227px;">
+                    <table>
+                        <caption>아웃풋 테이블 상세</caption>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width:168px;">
+                            <col style="width:153px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">파라미터 명</th>
+                            <th scope="col">데이터 타입</th>
+                            <th scope="col">설명</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+            </section>
+            <!--//section-->
+            <div class="btnArea flexRight" style="margin-top:20px;">
+                <button type="button" class="btn blue2 lg"><span>저장</span></button>
+            </div>
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

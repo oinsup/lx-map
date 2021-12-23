@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header.html')
+    <!--//header-->
+    <!--TOC-->
+    @@include('include/toc.html')
+    <!--//TOC-->
+    <!--analysis-->
+    @@include('include/analysis.html')
+    <!--//analysis-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--map-->
+            <div id="map" style="background:#ccc;"></div>
+            <!--//map-->
+
+            <!--userMenu-->
+            @@include('include/userMenu.html')
+            <!--//userMenu-->
+
+            <!--widget-->
+            @@include('include/widget.html')
+            <!--//widget-->
+
+            <!--location-->
+            @@include('include/location.html')
+            <!--//location-->
+
+            <!--scaleWidget-->
+            @@include('include/scaleWidget.html')
+            <!--//scaleWidget-->
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+<!--popup-->
+<div class="popup" style="width:900px;">
+    <!--head-->
+    <div class="head">
+        <strong class="titPop">웹앱 상세정보</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont">
+        <div class="inner cScroll" style="max-height:650px;">
+
+            <!--tabContWrap-->
+            <div class="tabContWrap type07">
+                <!--tabNav-->
+                <div class="tabNav">
+                    <ul class="tabList">
+                        <li class="active">상세정보</li>
+                        <li>공유현황</li>
+                    </ul>
+                </div>
+                <!--//tabNav-->
+                <!--tabCont-->
+                <div class="tabCont active">
+                    <!--section-->
+                    <section class="section type02">
+                        <!--table-->
+                        <div class="table">
+                            <table>
+                                <caption>기본정보</caption>
+                                <colgroup>
+                                    <col style="width:140px;"/>
+                                    <col style="width:270px;"/>
+                                    <col style="width:auto;"/>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <div class="pos-r">
+                                            <span class="titTable">사용자 점 레이어2</span>
+                                            <button type="button" class="btnEdit txt"><span class="hidden">수정</span></button>
+                                            <div class="editBox input">
+                                                <input type="text" style="width:150px;"/>
+                                                <button type="button" class="btn black"><span>적용</span></button>
+                                                <button type="button" class="btn grey2"><span>취소</span></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">템플릿 유형</th>
+                                    <td>시리즈맵</td>
+                                    <td rowspan="3" style="border-left:1px solid #e9e9e9;">
+                                        <div class="innerMap">
+                                            <div class="imgArea">
+                                                <img src="../images/popup/img-dummy-02.png" alt="지도이미지"/>
+                                                <button type="button" class="btnEdit img"><span class="hidden">수정</span></button>
+                                                <div class="editBox img">
+                                                    <button type="button" class="btn black"><span>업로드</span></button>
+                                                    <button type="button" class="btn grey2"><span>현재화면</span></button>
+                                                    <button type="button" class="btn grey2"><span>삭제</span></button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn blue2 sm"><span>지도 서비스로 보기</span><i class="ico rt ico-link2"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최종수정일자</th>
+                                    <td>2021-02-28</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록 일시</th>
+                                    <td>2021-02-28</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상세설명</th>
+                                    <td colspan="2">
+                                        <div class="pos-r">
+                                            <span>설명을 위한 영역입니다. 상세설명 부분입니다. 사용자 점 레이어2입니다 .설명을 위한 영역입니다. 설명 부분입니다. 사용자 점 레이어2입니다 .</span>
+                                            <button type="button" class="btnEdit txt"><span class="hidden">수정</span></button>
+                                            <div class="editBox textarea">
+                                                <textarea style="width:555px;height:45px;"></textarea>
+                                                <button type="button" class="btn black"><span>적용</span></button>
+                                                <button type="button" class="btn grey2"><span>취소</span></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </section>
+                    <!--//section-->
+                    <!--section-->
+                    <section class="section type02">
+                        <div class="titSec">
+                            <strong>레이어 목록</strong>
+                        </div>
+                        <!--tabContWrap-->
+                        <div class="tabContWrap type03">
+                            <!--tabNav-->
+                            <div class="tabNav">
+                                <ul class="tabList">
+                                    <li class="active">탭1</li>
+                                    <li>탭2</li>
+                                </ul>
+                            </div>
+                            <!--//tabNav-->
+                            <!--tabCont-->
+                            <div class="tabCont active">
+                                <!--table-->
+                                <div class="table txt-center cScroll" style="height:232px;">
+                                    <table>
+                                        <caption>레이어 목록</caption>
+                                        <colgroup>
+                                            <col style="width:108px;" />
+                                            <col style="width:155px;" />
+                                            <col style="width:170px;" />
+                                            <col style="width:170px;" />
+                                            <col style="width:auto;" />
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">레이어형태</th>
+                                            <th scope="col">레이어 명</th>
+                                            <th scope="col">레이어별칭</th>
+                                            <th scope="col">생성일/공유일 </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>공유 레이어</td>
+                                            <td>
+                                                <div class="icoBox">
+                                                    <i class="ico ico-line"><span class="hidden">선</span></i>
+                                                </div>
+                                            </td>
+                                            <td>공유 선 레이어1</td>
+                                            <td>공유 선 레이어1</td>
+                                            <td>2020-01-28<br/>13:27:09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공유 레이어</td>
+                                            <td>
+                                                <div class="icoBox">
+                                                    <i class="ico ico-dot"><span class="hidden">점</span></i>
+                                                </div>
+                                            </td>
+                                            <td>공유 점 레이어1</td>
+                                            <td>공유 점 레이어1</td>
+                                            <td>2020-01-28<br/>13:27:09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공유 레이어</td>
+                                            <td>
+                                                <div class="icoBox">
+                                                    <i class="ico ico-line"><span class="hidden">선</span></i>
+                                                </div>
+                                            </td>
+                                            <td>공유 선 레이어1</td>
+                                            <td>공유 선 레이어1</td>
+                                            <td>2020-01-28<br/>13:27:09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공유 레이어</td>
+                                            <td>
+                                                <div class="icoBox">
+                                                    <i class="ico ico-dot"><span class="hidden">점</span></i>
+                                                </div>
+                                            </td>
+                                            <td>공유 점 레이어1</td>
+                                            <td>공유 점 레이어1</td>
+                                            <td>2020-01-28<br/>13:27:09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공유 레이어</td>
+                                            <td>
+                                                <div class="icoBox">
+                                                    <i class="ico ico-line"><span class="hidden">선</span></i>
+                                                </div>
+                                            </td>
+                                            <td>공유 선 레이어1</td>
+                                            <td>공유 선 레이어1</td>
+                                            <td>2020-01-28<br/>13:27:09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공유 레이어</td>
+                                            <td>
+                                                <div class="icoBox">
+                                                    <i class="ico ico-dot"><span class="hidden">점</span></i>
+                                                </div>
+                                            </td>
+                                            <td>공유 점 레이어1</td>
+                                            <td>공유 점 레이어1</td>
+                                            <td>2020-01-28<br/>13:27:09</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                            </div>
+                            <!--//tabCont-->
+                            <!--tabCont-->
+                            <div class="tabCont"></div>
+                            <!--//tabCont-->
+                        </div>
+                        <!--//tabContWrap-->
+                    </section>
+                    <!--//section-->
+                </div>
+                <!--//tabCont-->
+                <!--tabCont-->
+                <div class="tabCont">
+                    <!--section-->
+                    <section class="section type02">
+                        <div class="titSec">
+                            <strong>공유 현황</strong>
+                        </div>
+                        <!--tabContWrap-->
+                        <div class="tabContWrap type03">
+                            <!--tabNav-->
+                            <div class="tabNav">
+                                <ul class="tabList">
+                                    <li class="active">전체 <span class="leng">(2건)</span></li>
+                                    <li>기관 <span class="leng">(0건)</span></li>
+                                    <li>사용자 <span class="leng">(2건)</span></li>
+                                </ul>
+                            </div>
+                            <!--//tabNav-->
+                            <!--tabCont-->
+                            <div class="tabCont active">
+                                <!--table-->
+                                <div class="table txt-center cScroll" style="max-height:341px;">
+                                    <table>
+                                        <caption>공유 현황</caption>
+                                        <colgroup>
+                                            <col style="width:120px;" />
+                                            <col style="width:auto;" />
+                                            <col style="width:150px;" />
+                                            <col style="width:225px;" />
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">기관</th>
+                                            <th scope="col">이름</th>
+                                            <th scope="col">공유 시작일</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>사용자</td>
+                                            <td>A기관</td>
+                                            <td>테스터사</td>
+                                            <td>2020-07-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>사용자</td>
+                                            <td>A기관</td>
+                                            <td>테스터사</td>
+                                            <td>2020-07-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>사용자</td>
+                                            <td>A기관</td>
+                                            <td>테스터사</td>
+                                            <td>2020-07-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>사용자</td>
+                                            <td>A기관</td>
+                                            <td>테스터사</td>
+                                            <td>2020-07-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>사용자</td>
+                                            <td>A기관</td>
+                                            <td>테스터사</td>
+                                            <td>2020-07-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>사용자</td>
+                                            <td>A기관</td>
+                                            <td>테스터사</td>
+                                            <td>2020-07-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>사용자</td>
+                                            <td>A기관</td>
+                                            <td>테스터사</td>
+                                            <td>2020-07-14</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                            </div>
+                            <!--//tabCont-->
+                            <!--tabCont-->
+                            <div class="tabCont"></div>
+                            <!--//tabCont-->
+                        </div>
+                        <!--//tabContWrap-->
+                    </section>
+                    <!--//section-->
+                    <!--section-->
+                    <section class="section type02">
+                        <div class="titSec">
+                            <strong>전체 공유(맵갤러리) 신청 현황</strong>
+                        </div>
+                        <!--table-->
+                        <div class="table txt-center cScroll" style="height:232px;">
+                            <table>
+                                <caption>전체 공유(맵갤러리) 신청 현황</caption>
+                                <colgroup>
+                                    <col style="width:86px;" />
+                                    <col style="width:86px;" />
+                                    <col style="width:auto;" />
+                                    <col style="width:120px;" />
+                                    <col style="width:120px;" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">순번</th>
+                                    <th scope="col">진행사항</th>
+                                    <th scope="col">내용</th>
+                                    <th scope="col">실행일시</th>
+                                    <th scope="col">완료일시</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><span class="colorType green">요청중</span></td>
+                                    <td class="txt-left">전체 공유(맵 갤러리)를 요청하였습니다.</td>
+                                    <td>2020-01-28<br/>13:27:09</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><span class="colorType blue">승인</span></td>
+                                    <td class="txt-left">전체 공유(맵 갤러리)로 승인되었습니다.</td>
+                                    <td>2020-01-28<br/>13:27:09</td>
+                                    <td>2020-01-28<br/>13:27:09</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><span class="colorType red">반려</span></td>
+                                    <td class="txt-left">전체 공유(맵 갤러리)를 요청이 반려되었습니다.<br/>
+                                        반려 사유 : 맵 갤러리 내부에 입력된 내용이 없습니다.</td>
+                                    <td>2020-01-28<br/>13:27:09</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><span class="colorType green">요청중</span></td>
+                                    <td class="txt-left">전체 공유(맵 갤러리)를 요청하였습니다.</td>
+                                    <td>2020-01-28<br/>13:27:09</td>
+                                    <td>-</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </section>
+                    <!--//section-->
+                </div>
+                <!--//tabCont-->
+            </div>
+            <!--//tabContWrap-->
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

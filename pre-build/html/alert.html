@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header.html')
+    <!--//header-->
+    <!--TOC-->
+    @@include('include/toc.html')
+    <!--//TOC-->
+    <!--analysis-->
+    @@include('include/analysis.html')
+    <!--//analysis-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--map-->
+            <div id="map" style="background:#ccc;"></div>
+            <!--//map-->
+
+            <!--userMenu2-->
+            @@include('include/userMenu.html')
+            <!--//userMenu2-->
+
+            <!--widget-->
+            @@include('include/widget.html')
+            <!--//widget-->
+
+            <!--location-->
+            @@include('include/location.html')
+            <!--//location-->
+
+            <!--scaleWidget-->
+            @@include('include/scaleWidget.html')
+            <!--//scaleWidget-->
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+<!--alert-->
+<div class="alert" style="left:400px;top:250px;">
+    <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    <div class="head">
+        <strong>ALERT</strong>
+    </div>
+    <div class="cont">
+        <div class="type warning"><span class="hidden">경고</span></div>
+        <strong class="titCont">다운로드 실패 안내</strong>
+        <p class="desc">데이터 건수가 많아 다운로드 할 수 없습니다.</p>
+        <div class="btnArea">
+            <button type="button" class="btn blue"><span>확인</span></button>
+        </div>
+    </div>
+</div>
+<!--//alert-->
+<!--alert-->
+<div class="alert" style="left:1550px;top:250px;">
+    <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    <div class="head">
+        <strong>CONFIRM</strong>
+    </div>
+    <div class="cont">
+        <div class="type confirm"><span class="hidden">경고</span></div>
+        <strong class="titCont">게시글을 삭제 하시겠습니까?</strong>
+        <p class="desc">해당 글은 복구할 수 없으며, 완전히 삭제 됩니다.</p>
+        <div class="btnArea">
+            <button type="button" class="btn blue"><span>확인</span></button>
+            <button type="button" class="btn grey"><span>취소</span></button>
+        </div>
+    </div>
+</div>
+<!--//alert-->
+<!--alert-->
+<div class="alert" style="left:1000px;top:250px;">
+    <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    <div class="head">
+        <strong>SUCCESS</strong>
+    </div>
+    <div class="cont">
+        <div class="type success"><span class="hidden">성공</span></div>
+        <strong class="titCont">삭제완료</strong>
+        <div class="btnArea">
+            <button type="button" class="btn blue"><span>확인</span></button>
+        </div>
+    </div>
+</div>
+<!--//alert-->
+<!--alert-->
+<div class="alert" style="left:400px;top:650px;">
+    <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    <div class="head">
+        <strong>ALERT</strong>
+    </div>
+    <div class="cont">
+        <div class="type warning"><span class="hidden">경고</span></div>
+        <strong class="titCont">레이어 추가 실패안내</strong>
+        <p class="desc">레이어 추가에 실패하였습니다.<br/>
+            해당 데이터는 SHP 타입의 데이터가 아닙니다.</p>
+        <div class="btnArea">
+            <button type="button" class="btn blue"><span>확인</span></button>
+            <button type="button" class="btn grey"><span>취소</span></button>
+        </div>
+    </div>
+</div>
+<!--//alert-->
+<!--alert-->
+<div class="alert" style="left:1550px;top:650px;">
+    <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    <div class="head">
+        <strong>CONFIRM</strong>
+    </div>
+    <div class="cont">
+        <div class="type confirm"><span class="hidden">경고</span></div>
+        <strong class="titCont">공간분석을 실행하시겠습니까?</strong>
+        <p class="desc">공간분석은 분석량에 따라 지연될 수 있으며, 완료된 후 별도의 알림을 통해 확인하실 수 있습니다.</p>
+        <div class="btnArea">
+            <button type="button" class="btn blue"><span>확인</span></button>
+            <button type="button" class="btn grey"><span>취소</span></button>
+        </div>
+    </div>
+</div>
+<!--//alert-->
+<!--sysMsg-->
+<div class="sysMsg on" style="top:300px;">댓글이 삭제 되었습니다.</div>
+<!--//sysMsg-->
+<!--sysMsg-->
+<div class="sysMsg on">비밀번호 재설정이 완료되었습니다.</div>
+<!--//sysMsg-->
+<!--sysMsg-->
+<div class="sysMsg on" style="top:650px;">레이어 추가가 완료되었습니다.</div>
+<!--//sysMsg-->
+
+</body>
+</html>

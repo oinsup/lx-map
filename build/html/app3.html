@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/jquery-ui.css">
+    <link rel="stylesheet" href="../lib/colorpicker/colorpicker.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/common/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/common/favicon.png">
+    <link rel="stylesheet" href="/lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../css/header_work.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="../lib/colorpicker/colorpicker.js"></script>
+    <script type="text/javascript" src="../lib/sortable.js"></script>
+    <script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+    <script src="../js/ui.js"></script>
+
+</head>
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    <header id="header">
+    <!--upper-->
+    <div class="group upper">
+        <a href="#" title="LX">
+            <h1 class="logo">
+                <img src="../images/header/logo-type02.png" alt="로고"/>
+            </h1>
+        </a>
+        <div class="menu">
+            <ul class="dep1">
+                <li class="webApp">
+                    <button type="button" class="tool">
+                        <span>웹앱</span>
+                    </button>
+                    <ul class="dep2">
+                        <li>
+                            <button type="button" class="tool type01">
+                                <span>새&nbsp;웹맵</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="tool type02">
+                                <span>검색</span>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="detail">
+                    <button type="button" class="tool">
+                        <span>상세설정</span>
+                    </button>
+                </li>
+                <li class="preview">
+                    <button type="button" class="tool">
+                        <span>미리보기</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--//upper-->
+    <div class="user">
+        <button type="button" class="btnUser">
+            <span>사용자</span>
+            <span class="new">22</span>
+        </button>
+        <!--userPop-->
+        <div class="userPop">
+            <div class="inner">
+                <strong class="position">최고관리자</strong>
+                <b class="name">송은희<span>님</span></b>
+                <ul>
+                    <li>
+                        <a href="#" title="알림"><i class="ico alarm"></i>
+                            <span class="new">22</span>
+                            <span>알림</span></a>
+                    </li>
+                    <li>
+                        <a href="#" title="mypage"><i class="ico myPage"></i><span>마이페이지</span></a>
+                    </li>
+                    <li>
+                        <a href="#" title="logout"><i class="ico logout"></i><span>로그아웃</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--//userPop-->
+    </div>
+    <!--lower-->
+    <div class="group lower">
+        <div class="menu">
+            <ul class="dep1">
+                <li class="share">
+                    <button type="button" class="tool">
+                        <span>공유</span>
+                    </button>
+                </li>
+                <li class="save">
+                    <button type="button" class="tool">
+                        <span>저장</span>
+                    </button>
+                    <ul class="dep2">
+                        <li>
+                            <button type="button" class="tool type01">
+                                <span>저장</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="tool type02">
+                                <span>다른이름<br/>으로저장</span>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="info">
+                    <button type="button" class="tool">
+                        <span>기본정보</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--//lower-->
+</header>
+    <!--//header-->
+    <!--detailSetting-->
+    
+<div id="detailSetting">
+    <!-- toc 1뎁스-->
+    <div class="toc dep1 tocWidget">
+        <div class="inner">
+            <!--head-->
+            <div class="head">
+                <strong class="titToc">독도 홍보 사이트</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnTocHide"><span class="hidden">숨기기</span></button>
+                </div>
+            </div>
+            <!--//head-->
+            <!--cont-->
+            <div class="cont cScroll">
+                <div class="inner">
+                    <!--tabContWrap-->
+                    <div class="tabContWrap type05">
+                        <!--tabNav-->
+                        <div class="tabNav">
+                            <!--tabList-->
+                            <ul class="tabList">
+                                <li class="active">레이아웃</li>
+                                <li>탭</li>
+                                <li>테마</li>
+                                <li>콘텐츠</li>
+                                <li>메인</li>
+                            </ul>
+                            <!--//tabList-->
+                        </div>
+                        <!--//tabNav-->
+                        <!--tabCont-->
+                        <div class="tabCont active">
+                            <div class="sectionArea thin">
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">헤더 정보</strong>
+                                    <!--layoutArea-->
+                                    <div class="layoutArea">
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-04-01.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-04-02.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                    </div>
+                                    <!--//layoutArea-->
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">패널 사이즈 설정</strong>
+                                    <!--layoutArea-->
+                                    <div class="layoutArea col2">
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-05-01.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <div class="flex ab">
+                                                <input type="text" style="width:134px;"/>
+                                                <span class="unit">PX</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-05-02.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-05-03.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-05-04.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-05-05.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                    </div>
+                                    <!--//layoutArea-->
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">패널 사이즈 설정</strong>
+                                    <!--layoutArea-->
+                                    <div class="layoutArea col2">
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-06-01.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <div class="flex ab">
+                                                <input type="text" style="width:134px;"/>
+                                                <span class="unit">PX</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-06-02.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-06-03.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                        <div class="row">
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-06-04.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                            <!--layoutBox-->
+                                            <div class="layoutBox">
+                                                <img src="../images/webApp/img-layout-06-05.png"/>
+                                            </div>
+                                            <!--//layoutBox-->
+                                        </div>
+                                    </div>
+                                    <!--//layoutArea-->
+                                </div>
+                                <!--//tabSec-->
+                            </div>
+                            <div class="btnArea flexRight" style="margin-top:10px;">
+                                <button type="button" class="btn blue lg"><span>저장</span></button>
+                            </div>
+                        </div>
+                        <!--//tabCont-->
+                        <!--tabCont-->
+                        <div class="tabCont">
+                            <div class="flex jb">
+                                <input type="text" style="width:210px;margin-right:10px;" class="blue"/>
+                                <button type="button" class="btn btnOptAdd"><i class="ico ico-add2"></i><span>탭 추가</span></button>
+                            </div>
+                            <!--dragList-->
+                            <div class="sortList">
+                                <!--item-->
+                                <div class="item">
+                                    <div class="editBox tocGroup">
+                                        <input type="text" style="width:210px;">
+                                        <button type="button" class="btn black"><span>적용</span></button>
+                                        <button type="button" class="btn grey2"><span>취소</span></button>
+                                    </div>
+                                    <i class="handle"></i>
+                                    <strong class="titGroup">독도는 우리땅</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnSortPop"><span class="hidden">팝업보기</span></button>
+                                        <button type="button" class="btnSortEdit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="btnSortRemove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </div>
+                                <!--//item-->
+                                <!--item-->
+                                <div class="item">
+                                    <div class="editBox tocGroup">
+                                        <input type="text" style="width:210px;">
+                                        <button type="button" class="btn black"><span>적용</span></button>
+                                        <button type="button" class="btn grey2"><span>취소</span></button>
+                                    </div>
+                                    <i class="handle"></i>
+                                    <strong class="titGroup">독도는 우리땅</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnSortPop"><span class="hidden">팝업보기</span></button>
+                                        <button type="button" class="btnSortEdit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="btnSortRemove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </div>
+                                <!--//item-->
+                                <!--item-->
+                                <div class="item">
+                                    <div class="editBox tocGroup">
+                                        <input type="text" style="width:210px;">
+                                        <button type="button" class="btn black"><span>적용</span></button>
+                                        <button type="button" class="btn grey2"><span>취소</span></button>
+                                    </div>
+                                    <i class="handle"></i>
+                                    <strong class="titGroup">독도는 우리땅</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnSortPop"><span class="hidden">팝업보기</span></button>
+                                        <button type="button" class="btnSortEdit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="btnSortRemove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </div>
+                                <!--//item-->
+                                <!--item-->
+                                <div class="item">
+                                    <div class="editBox tocGroup">
+                                        <input type="text" style="width:210px;">
+                                        <button type="button" class="btn black"><span>적용</span></button>
+                                        <button type="button" class="btn grey2"><span>취소</span></button>
+                                    </div>
+                                    <i class="handle"></i>
+                                    <strong class="titGroup">독도는 우리땅</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnSortPop"><span class="hidden">팝업보기</span></button>
+                                        <button type="button" class="btnSortEdit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="btnSortRemove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </div>
+                                <!--//item-->
+                                <!--item-->
+                                <div class="item">
+                                    <div class="editBox tocGroup">
+                                        <input type="text" style="width:210px;">
+                                        <button type="button" class="btn black"><span>적용</span></button>
+                                        <button type="button" class="btn grey2"><span>취소</span></button>
+                                    </div>
+                                    <i class="handle"></i>
+                                    <strong class="titGroup">독도는 우리땅</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnSortPop"><span class="hidden">팝업보기</span></button>
+                                        <button type="button" class="btnSortEdit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="btnSortRemove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </div>
+                                <!--//item-->
+                                <!--item-->
+                                <div class="item">
+                                    <div class="editBox tocGroup">
+                                        <input type="text" style="width:210px;">
+                                        <button type="button" class="btn black"><span>적용</span></button>
+                                        <button type="button" class="btn grey2"><span>취소</span></button>
+                                    </div>
+                                    <i class="handle"></i>
+                                    <strong class="titGroup">독도는 우리땅</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btnSortPop"><span class="hidden">팝업보기</span></button>
+                                        <button type="button" class="btnSortEdit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="btnSortRemove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </div>
+                                <!--//item-->
+                            </div>
+                            <!--//dragList-->
+                            <div class="checkbox sm">
+                                <input type="checkbox" id="chk01"/>
+                                <label for="chk01">각 탭들의 동일한 지리적 위치를 표시하도록 동기화</label>
+                            </div>
+                            <div class="btnArea flexRight" style="margin-top:20px;">
+                                <button type="button" class="btn blue lg"><span>저장</span></button>
+                            </div>
+                        </div>
+                        <!--//tabCont-->
+                        <!--tabCont-->
+                        <div class="tabCont">
+                            <div class="sectionArea thin">
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">헤더 정보</strong>
+                                    <div class="tabTable">
+                                        <table>
+                                            <caption>헤더 정보</caption>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><label>타이틀 로고</label></th>
+                                                <td>
+                                                    <div class="fileSelect">
+                                                        <input class="fileLocal" value="" disabled="disabled">
+                                                        <label for="file03" class="btnFileSelect">찾아보기</label>
+                                                        <input type="file" id="file03" class="fileHidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>타이틀 링크</label></th>
+                                                <td>
+                                                    <input type="text" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>타이틀</label></th>
+                                                <td>
+                                                    <input type="text" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>서브 타이틀</label></th>
+                                                <td>
+                                                    <input type="text" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="va-t"><label>정보</label></th>
+                                                <td style="padding:5px 0;">
+                                                    <textarea style="width:216px;height:55px;"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>배경색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>폰트색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">탭 설정</strong>
+                                    <div class="tabTable">
+                                        <table>
+                                            <caption>탭 설정</caption>
+                                            <colgroup>
+                                                <col style="width:90px;"/>
+                                                <col style="width:auto;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><label>테마선택</label></th>
+                                                <td>
+                                                    <button type="button" class="btnPopOpen"><span class="hidden">팝업열기</span></button>
+                                                    <span>테마 1</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>배경색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>포인트색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--//tabSec-->
+                                <!--tabSec-->
+                                <div class="tabSec">
+                                    <strong class="titSec">푸터 설정</strong>
+                                    <div class="tabTable">
+                                        <table>
+                                            <caption>푸터 설정</caption>
+                                            <colgroup>
+                                                <col style="width:90px;"/>
+                                                <col style="width:auto;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><label>타이틀 로고</label></th>
+                                                <td>
+                                                    <div class="fileSelect">
+                                                        <input class="fileLocal" value="" disabled="disabled">
+                                                        <label for="file02" class="btnFileSelect">찾아보기</label>
+                                                        <input type="file" id="file02" class="fileHidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="va-t"><label>내용</label></th>
+                                                <td style="padding:5px 0;">
+                                                    <textarea style="width:216px;height:55px;"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>배경색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label>폰트색상</label></th>
+                                                <td>
+                                                    <i class="color colorPicker type02"></i>
+                                                    <span class="hex">#000000</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--//tabSec-->
+                            </div>
+                            <div class="btnArea flexRight" style="margin-top:10px;">
+                                <button type="button" class="btn blue lg"><span>저장</span></button>
+                            </div>
+                        </div>
+                        <!--//tabCont-->
+                        <!--tabCont-->
+                        <div class="tabCont">
+                            <div class="row">
+                                <select style="width:100%;">
+                                    <option value="독도의 지리적 위치" selected>독도의 지리적 위치</option>
+                                </select>
+                            </div>
+                            <!--dataArea-->
+                            <div class="dataArea">
+
+                            </div>
+                            <!--//dataArea-->
+                            <div class="btnArea flexRight" style="margin-top:20px;">
+                                <button type="button" class="btn blue lg"><span>저장</span></button>
+                            </div>
+                        </div>
+                        <!--//tabCont-->
+                        <!--tabCont-->
+                        <div class="tabCont">
+                            <!--tabContWrap-->
+                            <div class="tabContWrap type06">
+                                <!--tabNav-->
+                                <div class="tabNav">
+                                    <ul class="tabList">
+                                        <li class="active">지도</li>
+                                        <li>이미지</li>
+                                        <li>비디오</li>
+                                        <li>Web URL</li>
+                                    </ul>
+                                </div>
+                                <!--//tabNav-->
+                                <!--tabCont-->
+                                <div class="tabCont active">
+                                    <div class="inner">
+                                        <!--secInner-->
+                                        <div class="secInner">
+                                            <label>지도 선택</label>
+                                            <div class="fileSelect">
+                                                <input class="fileLocal" value="" disabled="disabled" style="flex:1;">
+                                                <label for="file04" class="btnFileSelect">갤러리검색</label>
+                                                <input type="file" id="file04" class="fileHidden">
+                                            </div>
+                                        </div>
+                                        <!--//secInner-->
+                                        <!--secInner-->
+                                        <div class="secInner">
+                                            <label>지도 시작 좌표 및 배율 선택</label>
+                                            <div class="flex">
+                                                <button type="button" class="btn innerSec"><i class="ico ico-location"></i><span>지도에서 선택</span></button>
+                                            </div>
+                                        </div>
+                                        <!--//secInner-->
+                                        <div class="btnArea flexRight" style="margin-top:20px;">
+                                            <button type="button" class="btn blue lg"><span>저장</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//tabCont-->
+                                <!--tabCont-->
+                                <div class="tabCont">
+                                    <div class="inner">
+                                        <!--secInner-->
+                                        <div class="secInner">
+                                            <label>이미지 업로드</label>
+                                            <div class="fileSelect">
+                                                <input class="fileLocal" value="" disabled="disabled" style="flex:1;">
+                                                <label for="file05" class="btnFileSelect">이미지검색</label>
+                                                <input type="file" id="file05" class="fileHidden">
+                                            </div>
+                                        </div>
+                                        <!--//secInner-->
+                                        <!--secInner-->
+                                        <div class="secInner">
+                                            <label>웹이미지 URL</label>
+                                            <div class="flex">
+                                                <input type="text" style="flex:1;">
+                                                <button type="button" class="btn innerSec"><span>미리보기</span></button>
+                                            </div>
+                                        </div>
+                                        <!--//secInner-->
+                                        <p class="tip red">
+                                            <i>* 두가지 방식 중 하나만 선택해주세요</i>
+                                        </p>
+                                        <div class="btnArea flexRight" style="margin-top:10px;">
+                                            <button type="button" class="btn blue lg"><span>저장</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//tabCont-->
+                                <!--tabCont-->
+                                <div class="tabCont">
+                                    <div class="inner">
+                                        <!--secInner-->
+                                        <div class="secInner">
+                                            <label>비디오 URL</label>
+                                            <div class="flex">
+                                                <input type="text" style="flex:1;">
+                                                <button type="button" class="btn innerSec"><span>미리보기</span></button>
+                                            </div>
+                                        </div>
+                                        <!--//secInner-->
+                                        <div class="btnArea flexRight" style="margin-top:20px;">
+                                            <button type="button" class="btn blue lg"><span>저장</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//tabCont-->
+                                <!--tabCont-->
+                                <div class="tabCont">
+                                    <div class="inner">
+                                        <!--secInner-->
+                                        <div class="secInner">
+                                            <label>Web URL</label>
+                                            <div class="flex">
+                                                <input type="text" style="flex:1;">
+                                            </div>
+                                        </div>
+                                        <!--//secInner-->
+                                        <div class="btnArea flexRight" style="margin-top:20px;">
+                                            <button type="button" class="btn blue lg"><span>저장</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//tabCont-->
+                            </div>
+                            <!--/tabContWrap-->
+                        </div>
+                        <!--//tabCont-->
+                    </div>
+                    <!--//tabContWrap-->
+                </div>
+            </div>
+            <!--//cont-->
+        </div>
+    </div>
+    <!--// toc 1뎁스-->
+</div>
+    <!--//detailSetting-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+
+            </div>
+            <!--//app-->
+
+            <!--userMenu2-->
+            
+<div id="userMenu">
+    <!--userInfo-->
+    <div class="userInfo">
+        <!--user-->
+        <!--<div class="user">
+            <button type="button" class="btnUser">
+                <span class="hidden">사용자 정보</span>
+                <span class="new">22</span>
+            </button>
+            &lt;!&ndash;userPop&ndash;&gt;
+            <div class="userPop">
+                <div class="inner">
+                    <strong class="position">최고관리자</strong>
+                    <b class="name">송은희<span>님</span></b>
+                    <ul>
+                        <li>
+                            <a href="#" title="알림"><i class="ico alarm"></i>
+                                <span class="new">22</span>
+                                <span>알림</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="mypage"><i class="ico myPage"></i><span>마이페이지</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="logout"><i class="ico logout"></i><span>로그아웃</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            &lt;!&ndash;//userPop&ndash;&gt;
+        </div>-->
+        <!--//user-->
+        <!--alarm-->
+        <div class="alarm">
+            <button type="button" class="btnAlarm loading">
+                <span class="hidden">알림</span>
+                <span class="new type02">22</span>
+                <div class="alarmLoading"></div>
+            </button>
+            <!--alarmPop-->
+            <div class="alarmPop">
+                <button type="button" class="btnPopClose"><span class="hidden">닫기</span></button>
+                <!--head-->
+                <div class="head">
+                    <strong class="titPop">알림</strong>
+                </div>
+                <!--//head-->
+                <!--cont-->
+                <div class="cont">
+                    <div class="cScroll" style="height:400px;">
+                        <div class="inner">
+                            <div class="alarmList">
+                                <!--dayBox-->
+                                <div class="dayBox">
+                                    <div class="date today">
+                                        <p>2021-03-22 <span>(오늘)</span></p>
+                                    </div>
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                                <i class="newAlarm"><span class="hidden">새글</span></i>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                </div>
+                                <!--//dayBox-->
+                                <!--dayBox-->
+                                <div class="dayBox">
+                                    <div class="date">
+                                        <p>2021-03-21 <span>(어제)</span></p>
+                                    </div>
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                                <i class="newAlarm"><span class="hidden">새글</span></i>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                </div>
+                                <!--//dayBox-->
+                                <!--dayBox-->
+                                <div class="dayBox">
+                                    <div class="date">
+                                        <p>2021-03-20 <span>(그저께)</span></p>
+                                    </div>
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                                <i class="newAlarm"><span class="hidden">새글</span></i>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                </div>
+                                <!--//dayBox-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//cont-->
+            </div>
+            <!--alarmPop-->
+        </div>
+        <!--//alarm-->
+    </div>
+    <!--//userInfo-->
+</div>
+            <!--//userMenu2-->
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+<!--popup-->
+<div class="popup" style="width:900px;">
+    <!--head-->
+    <div class="head blue">
+        <strong class="titPop">탭 테마 선택</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont">
+        <div class="inner cScroll" style="max-height:650px;">
+            <div class="tip">
+                <i>- 탭의 가로 길이는 텍스트 길이에 따라 가변적으로 설정됩니다.</i>
+                <i>- 탭의 개수가 많을 경우 아래로 배치됩니다.</i>
+            </div>
+            <div class="choiceList col">
+                <div class="box">
+                    <div class="inner">
+                        <strong>탭 테마 1</strong>
+                        <!--contextArea-->
+                        <div class="contextArea theme01">
+                            <!--contextNav-->
+                            <div class="contextNav">
+                                <!--contextList-->
+                                <ul class="contextList">
+                                    <li class="active">탭1 명칭</li>
+                                    <li>탭2 명칭</li>
+                                    <li>탭3 명칭</li>
+                                    <li>탭4 명칭</li>
+                                    <li>탭5 명칭</li>
+                                    <li>탭6 명칭</li>
+                                    <li>탭7 명칭</li>
+                                    <li>탭8 명칭</li>
+                                </ul>
+                                <!--//contextList-->
+                            </div>
+                            <!--//contextNav-->
+                        </div>
+                        <!--//contextArea-->
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inner">
+                        <strong>탭 테마 2</strong>
+                        <!--contextArea-->
+                        <div class="contextArea theme02">
+                            <!--contextNav-->
+                            <div class="contextNav">
+                                <!--contextList-->
+                                <ul class="contextList">
+                                    <li class="active">탭1 명칭</li>
+                                    <li>탭2 명칭</li>
+                                    <li>탭3 명칭</li>
+                                    <li>탭4 명칭</li>
+                                    <li>탭5 명칭</li>
+                                    <li>탭6 명칭</li>
+                                    <li>탭7 명칭</li>
+                                    <li>탭8 명칭</li>
+                                </ul>
+                                <!--//contextList-->
+                            </div>
+                            <!--//contextNav-->
+                        </div>
+                        <!--//contextArea-->
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inner">
+                        <strong>탭 테마 3</strong>
+                        <!--contextArea-->
+                        <div class="contextArea theme03">
+                            <!--contextNav-->
+                            <div class="contextNav">
+                                <!--contextList-->
+                                <ul class="contextList">
+                                    <li class="active">탭1 명칭</li>
+                                    <li>탭2 명칭</li>
+                                    <li>탭3 명칭</li>
+                                    <li>탭4 명칭</li>
+                                    <li>탭5 명칭</li>
+                                    <li>탭6 명칭</li>
+                                    <li>탭7 명칭</li>
+                                    <li>탭8 명칭</li>
+                                </ul>
+                                <!--//contextList-->
+                            </div>
+                            <!--//contextNav-->
+                        </div>
+                        <!--//contextArea-->
+                    </div>
+                </div>
+            </div>
+            <div class="btnArea flexRight" style="margin-top:30px;">
+                <button type="button" class="btn black2 lg"><span>취소</span></button>
+                <button type="button" class="btn blue2 lg"><span>완료</span></button>
+            </div>
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

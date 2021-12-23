@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/jquery-ui.css">
+    <link rel="stylesheet" href="../lib/colorpicker/colorpicker.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/common/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/common/favicon.png">
+    <link rel="stylesheet" href="/lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../css/header_work.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="../lib/colorpicker/colorpicker.js"></script>
+    <script type="text/javascript" src="../lib/sortable.js"></script>
+    <script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+    <script src="../js/ui.js"></script>
+
+</head>
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    <header id="headerWork">
+    <!--upper-->
+    <div class="group upper">
+        <a href="#" title="LX">
+            <h1 class="logo">
+                <img src="../images/header/logo-type03.png" alt="로고"/>
+            </h1>
+        </a>
+        <div class="menu">
+            <ul class="dep1">
+                <li class="workFlow">
+                    <button type="button" class="tool">
+                        <span>워크플로우</span>
+                    </button>
+                    <ul class="dep2">
+                        <li>
+                            <button type="button" class="tool type01">
+                                <span>새&nbsp;워크플로우</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="tool type02">
+                                <span>검색</span>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="library">
+                    <button type="button" class="tool">
+                        <span>라이브러리</span>
+                    </button>
+                </li>
+                <li class="play">
+                    <button type="button" class="tool">
+                        <span>실행</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--//upper-->
+    <!--lower-->
+    <div class="group lower">
+        <div class="menu">
+            <ul class="dep1">
+                <li class="share">
+                    <button type="button" class="tool">
+                        <span>공유</span>
+                    </button>
+                </li>
+                <li class="save">
+                    <button type="button" class="tool">
+                        <span>저장</span>
+                    </button>
+                    <ul class="dep2">
+                        <li>
+                            <button type="button" class="tool type01">
+                                <span>저장</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="tool type02">
+                                <span>다른이름<br/>으로저장</span>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="info">
+                    <button type="button" class="tool">
+                        <span>기본정보</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--//lower-->
+</header>
+    <!--//header-->
+    <!--library-->
+    
+<div id="library">
+    <!-- toc 1뎁스-->
+    <div class="toc dep1 tocWidget">
+        <div class="inner">
+            <!--head-->
+            <div class="head">
+                <strong class="titToc">라이브러리 명</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnTocHide"><span class="hidden">숨기기</span></button>
+                </div>
+            </div>
+            <!--//head-->
+            <!--cont-->
+            <div class="cont">
+                <div class="inner">
+                    <!--accordion-->
+                    <div class="accordion">
+                        <ul class="toolList">
+                            <li class="hasDep">
+                                <span>데이터 요약분석</span>
+                                <ul class="innerList">
+                                    <li><i class="handle"></i><span>2뎁스 메뉴</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>2뎁스 메뉴</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>2뎁스 메뉴</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>2뎁스 메뉴</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                </ul>
+                            </li>
+                            <li class="hasDep">
+                                <span>위치 찾기 분석</span>
+                                <ul class="innerList">
+                                    <li><i class="handle"></i><span>2뎁스 메뉴</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>2뎁스 메뉴</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>2뎁스 메뉴</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>2뎁스 메뉴</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                </ul>
+                            </li>
+                            <li class="hasDep">
+                                <span>공간 패턴 분석</span>
+                                <ul class="innerList">
+                                    <li><i class="handle"></i><span>밀도맵</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>핫스팟 찾기</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>군집 찾기</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                    <li><i class="handle"></i><span>내삽 기능</span><button type="button" class="btnTip"><span class="hidden">팁</span><span>!</span></button></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>근접도 분석</span>
+                            </li>
+                            <li>
+                                <span>데이터 관리 분석</span>
+                            </li>
+                            <li>
+                                <span>좌표변환</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//accordion-->
+                </div>
+            </div>
+            <!--//cont-->
+        </div>
+    </div>
+    <!--// toc 1뎁스-->
+</div>
+    <!--//library-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+
+            </div>
+            <!--//app-->
+
+            <!--userMenu2-->
+            
+<div id="userMenu">
+    <!--userInfo-->
+    <div class="userInfo">
+        <!--user-->
+        <!--<div class="user">
+            <button type="button" class="btnUser">
+                <span class="hidden">사용자 정보</span>
+                <span class="new">22</span>
+            </button>
+            &lt;!&ndash;userPop&ndash;&gt;
+            <div class="userPop">
+                <div class="inner">
+                    <strong class="position">최고관리자</strong>
+                    <b class="name">송은희<span>님</span></b>
+                    <ul>
+                        <li>
+                            <a href="#" title="알림"><i class="ico alarm"></i>
+                                <span class="new">22</span>
+                                <span>알림</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="mypage"><i class="ico myPage"></i><span>마이페이지</span></a>
+                        </li>
+                        <li>
+                            <a href="#" title="logout"><i class="ico logout"></i><span>로그아웃</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            &lt;!&ndash;//userPop&ndash;&gt;
+        </div>-->
+        <!--//user-->
+        <!--alarm-->
+        <div class="alarm">
+            <button type="button" class="btnAlarm loading">
+                <span class="hidden">알림</span>
+                <span class="new type02">22</span>
+                <div class="alarmLoading"></div>
+            </button>
+            <!--alarmPop-->
+            <div class="alarmPop">
+                <button type="button" class="btnPopClose"><span class="hidden">닫기</span></button>
+                <!--head-->
+                <div class="head">
+                    <strong class="titPop">알림</strong>
+                </div>
+                <!--//head-->
+                <!--cont-->
+                <div class="cont">
+                    <div class="cScroll" style="height:400px;">
+                        <div class="inner">
+                            <div class="alarmList">
+                                <!--dayBox-->
+                                <div class="dayBox">
+                                    <div class="date today">
+                                        <p>2021-03-22 <span>(오늘)</span></p>
+                                    </div>
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                                <i class="newAlarm"><span class="hidden">새글</span></i>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                </div>
+                                <!--//dayBox-->
+                                <!--dayBox-->
+                                <div class="dayBox">
+                                    <div class="date">
+                                        <p>2021-03-21 <span>(어제)</span></p>
+                                    </div>
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                                <i class="newAlarm"><span class="hidden">새글</span></i>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                </div>
+                                <!--//dayBox-->
+                                <!--dayBox-->
+                                <div class="dayBox">
+                                    <div class="date">
+                                        <p>2021-03-20 <span>(그저께)</span></p>
+                                    </div>
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                                <i class="newAlarm"><span class="hidden">새글</span></i>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                    <!--log-->
+                                    <div class="log">
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <div class="inner">
+                                            <p>
+                                                <strong>레이어 업로드 완료</strong>
+                                            </p>
+                                            <span>Bdng csv</span>
+                                        </div>
+                                    </div>
+                                    <!--//log-->
+                                </div>
+                                <!--//dayBox-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//cont-->
+            </div>
+            <!--alarmPop-->
+        </div>
+        <!--//alarm-->
+    </div>
+    <!--//userInfo-->
+</div>
+            <!--//userMenu2-->
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+
+<!--popup-->
+<div class="popup" style="width:900px;">
+    <!--head-->
+    <div class="head">
+        <strong class="titPop">라이브러리 상세정보</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont">
+        <div class="inner cScroll" style="max-height:650px;">
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>라이브러리 상세</strong>
+                </div>
+                <!--table-->
+                <div class="table">
+                    <table>
+                        <caption>라이브러리 상세</caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">라이브러리 명</th>
+                            <td>포인트 집계</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">라이브러리 구분</th>
+                            <td>데이터 요약 분석</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">라이브러리 설명</th>
+                            <td>입력 레이어에 대해서 분석 칼럼과 유일 값을 가진 컬럼에 대하여
+                                포인트집계<br/>예) 정류장별 이용 고객</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+
+            </section>
+            <!--//section-->
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>인풋 파라미터 정의</strong>
+                </div>
+                <!--table-->
+                <div class="table txt-center cScroll" style="height:170px;">
+                    <table>
+                        <caption>인풋 파라미터 정의</caption>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width:168px;">
+                            <col style="width:153px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">파라미터 명</th>
+                            <th scope="col">데이터 타입</th>
+                            <th scope="col">연결 데이터</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>테이블명</td>
+                            <td>
+                                <select style="width:100%;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+            </section>
+            <!--//section-->
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>아웃풋 테이블 상세</strong>
+                </div>
+                <!--table-->
+                <div class="table txt-center cScroll" style="height:227px;">
+                    <table>
+                        <caption>아웃풋 테이블 상세</caption>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width:168px;">
+                            <col style="width:153px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">파라미터 명</th>
+                            <th scope="col">데이터 타입</th>
+                            <th scope="col">설명</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>a</td>
+                            <td>텍스트</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+            </section>
+            <!--//section-->
+            <div class="btnArea flexRight" style="margin-top:20px;">
+                <button type="button" class="btn blue2 lg"><span>저장</span></button>
+            </div>
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

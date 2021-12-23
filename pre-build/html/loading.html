@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header.html')
+    <!--//header-->
+    <!--TOC-->
+    @@include('include/toc.html')
+    <!--//TOC-->
+    <!--analysis-->
+    @@include('include/analysis.html')
+    <!--//analysis-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--map-->
+            <div id="map" style="background:#ccc;"></div>
+            <!--//map-->
+
+            <!--userMenu-->
+            @@include('include/userMenu.html')
+            <!--//userMenu-->
+
+            <!--widget-->
+            @@include('include/widget.html')
+            <!--//widget-->
+
+            <!--location-->
+            @@include('include/location.html')
+            <!--//location-->
+
+            <!--scaleWidget-->
+            @@include('include/scaleWidget.html')
+            <!--//scaleWidget-->
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+<!--popup-->
+<div class="popup" style="width:900px;">
+    <!--head-->
+    <div class="head">
+        <strong class="titPop">레이어 상세정보</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont">
+        <div class="inner cScroll" style="max-height:650px;">
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>기본정보</strong>
+                </div>
+                <div class="table">
+                    <table>
+                        <caption>기본정보</caption>
+                        <colgroup>
+                            <col style="width:140px;"/>
+                            <col style="width:270px;"/>
+                            <col style="width:140px;"/>
+                            <col style="width:auto;"/>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">레이어 명칭</th>
+                            <td>사용자 점 레이어2</td>
+                            <td rowspan="3" colspan="2" style="border-left:1px solid #e9e9e9;">
+                                <div class="innerMap">
+                                    <div class="imgArea">
+                                        <img src="../images/popup/img-dummy-02.png" alt="지도이미지"/>
+                                        <button type="button" class="btnEdit img"><span class="hidden">수정</span></button>
+                                        <div class="editBox img">
+                                            <button type="button" class="btn black"><span>업로드</span></button>
+                                            <button type="button" class="btn grey2"><span>현재화면</span></button>
+                                            <button type="button" class="btn grey2"><span>삭제</span></button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn blue sm"><span>지도 서비스로 보기</span><i class="ico rt ico-link2"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">레이어 별칭</th>
+                            <td>
+                                <div class="pos-r">
+                                    <span>사용자 점 레이어2</span>
+                                    <button type="button" class="btnEdit txt"><span class="hidden">수정</span></button>
+                                    <div class="editBox input">
+                                        <input type="text" style="width:145px;"/>
+                                        <button type="button" class="btn black"><span>적용</span></button>
+                                        <button type="button" class="btn grey2"><span>취소</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">레이어 타입</th>
+                            <td>점데이터</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">상세설명</th>
+                            <td colspan="3">
+                                <div class="pos-r">
+                                    <span>설명을 위한 영역입니다. 상세설명 부분입니다. 사용자 점 레이어2입니다 .설명을 위한 영역입니다. 설명 부분입니다. 사용자 점 레이어2입니다 .</span>
+                                    <button type="button" class="btnEdit txt"><span class="hidden">수정</span></button>
+                                    <div class="editBox textarea">
+                                        <textarea style="width:555px;height:45px;"></textarea>
+                                        <button type="button" class="btn black"><span>적용</span></button>
+                                        <button type="button" class="btn grey2"><span>취소</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">공유 범위</th>
+                            <td>부분공유</td>
+                            <th scope="row">생성 일자</th>
+                            <td>2019-12-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">데이터 건수</th>
+                            <td>560건</td>
+                            <th scope="row">다운로드</th>
+                            <td>
+                                <div class="tagList download">
+                                    <a href="#">
+                                        <span class="tag green">SHP</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="tag blue">CSV</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="tag peacock">GeoJSON</span>
+                                    </a>
+                                </div>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!--//section-->
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>공유현황</strong>
+                </div>
+                <!--tabContWrap-->
+                <div class="tabContWrap type03">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList">
+                            <li class="active">전체 <span class="leng">(<span class="blue">2</span>건)</span></li>
+                            <li>기관 <span class="leng">(<span class="grey">0</span>건)</span></li>
+                            <li>사용자 <span class="leng">(<span class="blue">2</span>건)</span></li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont active">
+                        <!--table-->
+                        <div class="table txt-center cScroll" style="height:335px;">
+                            <table>
+                                <caption>공유현황</caption>
+                                <colgroup>
+                                    <col style="width:120px;" />
+                                    <col style="width:auto;" />
+                                    <col style="width:160px;" />
+                                    <col style="width:210px;" />
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">기관/주소록 명</th>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">공유 시작일자</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>사용자</td>
+                                    <td>A기관</td>
+                                    <td>테스터사</td>
+                                    <td>2020-07-14</td>
+                                </tr>
+                                <tr>
+                                    <td>사용자</td>
+                                    <td>A기관</td>
+                                    <td>테스터사</td>
+                                    <td>2020-07-14</td>
+                                </tr>
+                                <tr>
+                                    <td>사용자</td>
+                                    <td>A기관</td>
+                                    <td>테스터사</td>
+                                    <td>2020-07-14</td>
+                                </tr>
+                                <tr>
+                                    <td>사용자</td>
+                                    <td>A기관</td>
+                                    <td>테스터사</td>
+                                    <td>2020-07-14</td>
+                                </tr>
+                                <tr>
+                                    <td>사용자</td>
+                                    <td>A기관</td>
+                                    <td>테스터사</td>
+                                    <td>2020-07-14</td>
+                                </tr>
+                                <tr>
+                                    <td>사용자</td>
+                                    <td>A기관</td>
+                                    <td>테스터사</td>
+                                    <td>2020-07-14</td>
+                                </tr>
+                                <tr>
+                                    <td>사용자</td>
+                                    <td>A기관</td>
+                                    <td>테스터사</td>
+                                    <td>2020-07-14</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont"></div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </section>
+            <!--//section-->
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+<div id="dimmed"></div>
+<!--loadingBox-->
+<div class="loadingBox">
+    <div class="loadingArea">
+        <div class="quater">
+        </div>
+    </div>
+    <strong>로딩중 입니다.</strong>
+</div>
+<!--//loadingBox-->
+</body>
+</html>

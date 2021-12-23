@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head.html')
+<body>
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    @@include('include/header2.html')
+    <!--//header-->
+    <!--detailSetting-->
+    @@include('include/detailSetting2.html')
+    <!--//detailSetting-->
+    <!--mapContainer-->
+    <div class="mapContainer">
+        <!--mapArea-->
+        <div class="mapArea">
+            <!--app-->
+            <div id="app" style="background:#fafafa;">
+                <!--sampleFrame-->
+                <div class="sampleFrame">
+                    <!--toolArea
+                    <div class="toolArea">
+                        <div class="flex ac">
+                            <button type="button" class="btn tool prev"><span class="hidden">이전</span></button>
+                            <button type="button" class="btn tool next"><span class="hidden">다음</span></button>
+                            <button type="button" class="btn tool refresh"><span class="hidden">새로고침</span></button>
+                            <input type="text" class="address" />
+                            <button type="button" class="btn tool more"><span class="hidden">더보기</span></button>
+                        </div>
+                    </div>
+                    //toolArea-->
+                    <!--head-->
+                    <div class="head">
+                        <div class="logo">
+                            <img src="../images/webapp/img-logo.png" alt="logo"/>
+                        </div>
+                        <strong class="mainTit">웹앱 타이틀</strong>
+                        <b class="subTit">- 웹앱 서브타이틀</b>
+                        <div class="flex">
+                            <button type="button" class="btnTip white"><span class="hidden">팁</span><span>!</span></button>
+                            <div class="tipDesc">
+                                <p>편집한 웹앱의 정보를 표시합니다.</p>
+                            </div>
+                        </div>
+                        <div class="toolGroup">
+                            <ul>
+                                <li class="printWidget">
+                                    <button type="button" class="tool"><span>출력</span></button>
+                                </li>
+                                <li class="resetWidget">
+                                    <button type="button" class="tool"><span>초기화</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//head-->
+                    <!--cont-->
+                    <div class="cont">
+                        <!--sectionArea-->
+                        <div class="sectionArea type03">
+                            <ul>
+                                <li class="active">
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                                <li>
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                                <li>
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                                <li>
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                                <li>
+                                    <strong class="tit">섹션제목</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--sectionArea-->
+                        <!--tocArea-->
+                        <div class="tocArea">
+                            @@include('include/toc.html')
+                        </div>
+                        <!--//tocArea-->
+                        <!--contentArea-->
+                        <div class="contentArea">
+                            @@include('include/widget.html')
+                        </div>
+                        <!--//contentArea-->
+                    </div>
+                    <!--//cont-->
+
+                    <!--foot-->
+                    <div class="foot">
+                        <p>COPYRIGHT(C) LX, ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <!--//foot-->
+                </div>
+                <!--//sampleFrame-->
+            </div>
+            <!--//app-->
+
+            <!--userMenu2-->
+            @@include('include/userMenu2.html')
+            <!--//userMenu2-->
+
+        </div>
+        <!--//mapArea-->
+    </div>
+    <!--//mapContainer-->
+</div>
+<!--//wrap-->
+<!--popup-->
+<div class="popup sm" style="width:391px;">
+    <!--head-->
+    <div class="head blue">
+        <strong class="titPop">공간분석 설정</strong>
+        <div class="btnGroup">
+            <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+        </div>
+    </div>
+    <!--//head-->
+    <!--cont-->
+    <div class="cont">
+        <div class="inner cScroll" style="max-height:650px;">
+            <!--section-->
+            <section class="section type02">
+                <div class="titSec">
+                    <strong>위젯 설정</strong>
+                </div>
+                <!--changeWidgetIcon-->
+                <div class="changeWidgetIcon">
+                    <div class="inner">
+                        <div>
+                            <div class="widgetBox">
+                                <button type="button" class="widget style">
+                                    <img src="../images/widget/ico-widget-style.png" alt="스타일">
+                                    <span>스타일</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fileSelect">
+                            <label for="file04" class="btnFileSelect">아이콘 변경</label>
+                            <input class="fileLocal" value="" disabled="disabled">
+                            <input type="file" id="file04" class="fileHidden">
+                        </div>
+                    </div>
+                </div>
+                <!--//changeWidgetIcon-->
+                <!--table-->
+                <div class="table innerTable hover txt-center">
+                    <table>
+                        <caption>공간분석 설정</caption>
+                        <colgroup>
+                            <col style="width:70px;" />
+                            <col style="width:70px;" />
+                            <col style="width:auto;" />
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">전체</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">설명</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="3">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:70px;" />
+                                        <col style="width:70px;" />
+                                        <col style="width:auto;" />
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="chk-01">
+                                                <label for="chk-01"></label>
+                                            </div>
+                                        </td>
+                                        <td>분야1</td>
+                                        <td>설명설명설명설명설명</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <!--changeWidgetIcon-->
+                                            <div class="changeWidgetIcon">
+                                                <div class="inner">
+                                                    <div>
+                                                        <div class="widgetBox">
+                                                            <button type="button" class="widget style">
+                                                                <img src="../images/widget/ico-widget-style.png" alt="스타일">
+                                                                <span>스타일</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fileSelect">
+                                                        <label for="file05" class="btnFileSelect">아이콘 변경</label>
+                                                        <input class="fileLocal" value="" disabled="disabled">
+                                                        <input type="file" id="file05" class="fileHidden">
+                                                    </div>
+                                                </div>
+                                                <div class="chkGroup">
+                                                    <div class="row txt-left">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="chk-01-01">
+                                                            <label for="chk-01-01">설명설명설명</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row txt-left">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="chk-01-02">
+                                                            <label for="chk-01-02">설명설명설명</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//changeWidgetIcon-->
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:70px;" />
+                                        <col style="width:70px;" />
+                                        <col style="width:auto;" />
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="chk-02">
+                                                <label for="chk-02"></label>
+                                            </div>
+                                        </td>
+                                        <td>분야1</td>
+                                        <td>설명설명설명설명설명</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:70px;" />
+                                        <col style="width:70px;" />
+                                        <col style="width:auto;" />
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="chk-03">
+                                                <label for="chk-03"></label>
+                                            </div>
+                                        </td>
+                                        <td>분야1</td>
+                                        <td>설명설명설명설명설명</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:70px;" />
+                                        <col style="width:70px;" />
+                                        <col style="width:auto;" />
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="chk-04">
+                                                <label for="chk-04"></label>
+                                            </div>
+                                        </td>
+                                        <td>분야1</td>
+                                        <td>설명설명설명설명설명</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:70px;" />
+                                        <col style="width:70px;" />
+                                        <col style="width:auto;" />
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="chk-05">
+                                                <label for="chk-05"></label>
+                                            </div>
+                                        </td>
+                                        <td>분야1</td>
+                                        <td>설명설명설명설명설명</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+            </section>
+            <!--//section-->
+            <div class="btnArea flex sb" style="margin-top:20px;">
+                <button type="button" class="btn black2 lg"><span>취소</span></button>
+                <button type="button" class="btn blue2 lg"><span>완료</span></button>
+            </div>
+        </div>
+    </div>
+    <!--//cont-->
+
+</div>
+<!--//popup-->
+
+</body>
+</html>

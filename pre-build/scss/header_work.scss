@@ -1,0 +1,188 @@
+#headerWork{z-index:20;width:64px;min-width:64px;height:100%;display:flex;flex-direction:column;justify-content: space-between;background-color:#fff;box-shadow:4px 0 5px 0 rgba(0, 0, 0, 0.2);
+  .logo{text-align:center;margin:10px 0;
+    //img{margin-top:9px;}
+  }
+  .user{position:relative;margin-top:auto;
+    .btnUser{width:100%;height:74px;border-radius:50%;color:#333;padding-top:30px;font-family:"Pretendard Bold";
+      background:url("../images/common/ico-user-type02.png")no-repeat center 15px;}
+  }
+
+  .new{position:absolute;left:37px;top:11px;z-index:10;height:14px;line-height:11px;padding:0 2px;font-size:10px;color:#fff;font-family:"Pretendard Bold";border-radius:3px;background:#f85959;
+    &.type02{border-radius:50px;
+      &:after{bottom:-2px;}
+    }
+  }
+  .userPop{position:absolute;left:70px;top:50%;transform:translateY(-50%);z-index:10;min-width:100px;word-break:keep-all;background:#333;border-radius:3px;box-shadow: 0.5px 0.9px 4px 0 rgba(0, 0, 0, 0.27);
+    &:before{position:absolute;left:-1px;top:50%;display:block;content:'';border-left:5px solid #333;transform:rotate(-45deg) translateY(-50%);
+      border-right:5px solid transparent;border-top:5px solid #333;border-bottom:5px solid transparent;}
+    .inner{padding:10px 12px;}
+    .position{display:block;color:#ffffff;opacity:.4;font-family:"Pretendard";font-size:12px;}
+    .name{display:block;margin-bottom:5px;color:#fff;font-size:17px;font-family:"Pretendard Bold";
+      span{font-size:12px;font-weight:normal;}
+    }
+    ul{padding-top:10px;border-top:1px solid rgba(255,255,255,0.4);
+      li{position:relative;margin-bottom:5px;color:#fff;font-size:13px;font-family:"Pretendard";font-weight:normal;
+        .new{position:absolute;left:0;top:1px;z-index:10;width:16px;height:16px;line-height:16px;padding:0;border-radius:50px;margin-right:4px;font-size:10px;text-align:center;
+          background:#f85959;}
+        &:last-of-type{margin-bottom:0;}
+        >a{display:flex;align-items:center;}
+      }
+    }
+    i.ico{display:inline-block;width:15px;height:15px;margin-right:4px;
+      &.alarm{background-image: url("../images/common/ico-user-alarm.png");}
+      &.myPage{background-image: url("../images/common/ico-user-mypage.png");}
+      &.logout{background-image: url("../images/common/ico-user-logout.png");}
+    }
+  }
+  .lower{margin-bottom:22px;}
+  .menu{
+    li{position:relative;text-align:center;font-family:"Pretendard Bold";
+      >.tool{width:100%;height:74px;color:#333;background-repeat:no-repeat;background-position:center 15px;
+        span{display:block;padding-top:30px;letter-spacing:-1px;}
+      }
+      &.webMap{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-webmap-active.png");}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-webmap.png");}
+        .dep2{
+          .tool{
+            &.type01{background-image:url("../images/header/ico-webmap-01.png");
+              &:hover,&.active{background-image:url("../images/header/ico-webmap-01-active.png");}
+            }
+            &.type02{background-image:url("../images/header/ico-webmap-02.png");
+              &:hover,&.active{background-image:url("../images/header/ico-webmap-02-active.png");}
+            }
+          }
+        }
+      }
+      &.webApp{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-webapp-active.png");}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-webapp.png");}
+        .dep2{
+          .tool{
+            &.type01{background-image:url("../images/header/ico-webapp-01.png");
+              &:hover,&.active{background-image:url("../images/header/ico-webapp-01-active.png");}
+            }
+            &.type02{background-image:url("../images/header/ico-webapp-02.png");
+              &:hover,&.active{background-image:url("../images/header/ico-webapp-02-active.png");}
+            }
+          }
+        }
+      }
+      &.workFlow{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-workflow-active.png");}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-workflow.png");}
+        .dep2{
+          .tool{
+            &.type01{background-image:url("../images/header/ico-workflow-01.png");
+              &:hover,&.active{background-image:url("../images/header/ico-workflow-01-active.png");}
+            }
+            &.type02{background-image:url("../images/header/ico-workflow-02.png");
+              &:hover,&.active{background-image:url("../images/header/ico-workflow-02-active.png");}
+            }
+          }
+        }
+      }
+      &.detail{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-detail-active.png");}
+          &:after{display:none;}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-detail.png");}
+
+      }
+      &.library{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-library-active.png");}
+          &:after{display:none;}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-library.png");}
+
+      }
+      &.play{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-play-active.png");}
+          &:after{display:none;}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-play.png");}
+      }
+      &.preview{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-preview-active.png");}
+          &:after{display:none;}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-preview.png");}
+
+      }
+      &.tocToggle{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-toc-active.png");}
+          &:after{display:none;}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-toc.png");}
+      }
+      &.analysis{
+
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-analysis-active.png");}
+          &:after{display:none;}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-analysis.png");}
+      }
+      &.share{
+
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-share-active.png");}
+          &:after{display:none;}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-share.png");}
+      }
+      &.save{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-save-active.png");}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-save.png");}
+        .dep2{
+          .tool{
+            &.type01{background-image:url("../images/header/ico-save-01.png");
+              &:hover,&.active{background-image:url("../images/header/ico-save-01-active.png");}
+            }
+            &.type02{background-image:url("../images/header/ico-save-02.png");background-position:center 10px;line-height:15px;
+              span{padding-top:35px;}
+              &:hover,&.active{background-image:url("../images/header/ico-save-02-active.png");}
+            }
+          }
+        }
+      }
+      &.info{
+        &:hover,&.active{
+          >.tool{background-image:url("../images/header/ico-tool-info-active.png");}
+          &:after{display:none;}
+        }
+        >.tool{background-image:url("../images/header/ico-tool-info.png");}
+      }
+      &.active{
+        >.tool{color:#2f5597;}
+        &:after{position:absolute;right:2px;bottom:2px;display:block;content:'';border-left:4px solid transparent;border-top:4px solid transparent;border-right:4px solid #fff;border-bottom:4px solid #fff;}
+        .dep2{left:72px;visibility:visible;opacity:1;}
+      }
+      &:hover{
+        >.tool{color:#2f5597;}
+        &:after{position:absolute;right:2px;bottom:2px;display:block;content:'';border-left:4px solid transparent;border-top:4px solid transparent;border-right:4px solid #fff;border-bottom:4px solid #fff;}
+      }
+      .dep2{position:absolute;left:0;top:0;display:flex;visibility:hidden;opacity:0;padding:0 10px;box-shadow: 0.5px 0.9px 4px 0 rgba(0, 0, 0, 0.27);border-radius:3px;background-color:#fff;word-break:keep-all;transition:.4s;
+        li{
+          &:hover,&.active{background-color:transparent;
+            .tool{color:#2f5597;}
+          }
+          .tool{padding:0 15px;color:#2e2e2e;background-repeat:no-repeat;background-position:center 15px;}
+        }
+      }
+    }
+  }
+}
